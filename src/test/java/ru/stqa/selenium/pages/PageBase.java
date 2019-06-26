@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import java.util.List;
 
 import java.awt.*;
 import java.awt.event.KeyEvent;
@@ -77,6 +78,14 @@ public abstract class PageBase {
         try {
             new WebDriverWait(driver,time)
                     .until(ExpectedConditions.visibilityOfAllElementsLocatedBy(locator));
+        } catch(Exception e){
+            e.printStackTrace();
+        }
+    }
+    public void waitUntilAllElementsVisible(List<WebElement> elements, int time){
+        try {
+            new WebDriverWait(driver,time)
+                    .until(ExpectedConditions.visibilityOfAllElements(elements));
         } catch(Exception e){
             e.printStackTrace();
         }

@@ -1,8 +1,12 @@
 package ru.stqa.selenium.pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.List;
 
@@ -19,7 +23,11 @@ public class HomePageHelper extends PageBase{
     @FindBy(id = "profile")
     WebElement profileIcon;
 
-    //@FindBy()
+    @FindBy(name = "selectholidays")
+    WebElement filterHoliday;
+
+    @FindBy(xpath = "//div[@class='itemEventInsert']")
+    List<WebElement> listEvents;
 
     public HomePageHelper(WebDriver driver) {
         super(driver);
@@ -28,6 +36,7 @@ public class HomePageHelper extends PageBase{
     public HomePageHelper waitUntilPageIsLoaded(){
 
         waitUntilElementClickable(loginIcon,20);
+        waitUntilAllElementsVisible(listEvents,20);
 
         return this;
     }
@@ -60,7 +69,33 @@ public class HomePageHelper extends PageBase{
     }
 
 
-    public void chooseFilterHoliday(String filterHolidayShabbat) {
+    public HomePageHelper chooseFilterHoliday(String value) {
+    Select selector = new Select(filterHoliday);
+    selector.selectByValue(value);
+    return this;
+    }
 
+    public HomePageHelper waitEventsListReloaded() {
+        try{
+            new WebDriverWait(driver, 10)
+                    .until(ExpectedConditions.visibilityOfAllElements(listEvents));
+        } catch(Exception e){
+            try {
+                Thread.sleep(1000);
+                waitUntilAllElementsVisible(listEvents,20);
+            } catch (InterruptedException ex) {
+                ex.printStackTrace();
+            }
+        }
+        return this;
+    }
+
+    public boolean isEventsHoliday(String value) {
+        int counter = 0;
+        for(WebElement element: listEvents){
+            if(element.findElement(By.className("holidayItemEvents"))
+                    .getText().equals(value)) counter++;
+        }
+        return counter == listEvents.size();
     }
 }
