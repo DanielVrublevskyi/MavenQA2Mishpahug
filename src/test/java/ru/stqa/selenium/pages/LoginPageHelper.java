@@ -54,4 +54,8 @@ public class LoginPageHelper extends PageBase {
             cancelSignInModalWindow();
         return this;
     }
+
+    public boolean itIsLoginPage() {
+        return signInButton.isDisplayed();
+    }
 }

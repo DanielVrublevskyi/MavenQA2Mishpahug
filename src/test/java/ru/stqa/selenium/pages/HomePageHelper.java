@@ -19,9 +19,7 @@ public class HomePageHelper extends PageBase{
     @FindBy(id = "profile")
     WebElement profileIcon;
 
-
-
-
+    //@FindBy()
 
     public HomePageHelper(WebDriver driver) {
         super(driver);
@@ -62,4 +60,7 @@ public class HomePageHelper extends PageBase{
     }
 
 
+    public void chooseFilterHoliday(String filterHolidayShabbat) {
+
+    }
 }
