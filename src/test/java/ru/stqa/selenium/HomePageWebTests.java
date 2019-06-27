@@ -2,21 +2,20 @@ package ru.stqa.selenium;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 import ru.stqa.selenium.pages.HomePageHelper;
 import ru.stqa.selenium.pages.LoginPageHelper;
-import org.testng.annotations.Test;
-import org.testng.Assert;
 
 import java.util.Set;
 
-public class HomePageTests extends TestBase{
+public class HomePageWebTests extends TestBase{
     public HomePageHelper homePage;
     public LoginPageHelper loginPage;
 
-
     @BeforeMethod
-    public void initTests() {
+    public void initTest(){
         homePage = PageFactory
                 .initElements(driver, HomePageHelper.class);
         loginPage = PageFactory.initElements(driver, LoginPageHelper.class);
@@ -33,8 +32,8 @@ public class HomePageTests extends TestBase{
     @Test
     public void singleFilterByHoliday(){
         homePage.chooseFilterHoliday(FILTER_HOLIDAY_SHABBAT)
-                 .waitEventsListReloaded();
-       // Assert.assertTrue(homePage.isEventsHoliday(FILTER_HOLIDAY_SHABBAT));
+                .waitEventsListReloaded();
+        Assert.assertTrue(homePage.isEventsHoliday(FILTER_HOLIDAY_SHABBAT));
     }
 
     @Test
@@ -67,7 +66,11 @@ public class HomePageTests extends TestBase{
         System.out.println("window after switching:" + driver
                 .getWindowHandle());
         driver.close();
+        //System.out.println("window after closing:" + driver
+              //  .getWindowHandle());
         driver.switchTo().window(mainHandle);
+        System.out.println("window after switching to mainWindow:" + driver
+                .getWindowHandle());
     }
 
 

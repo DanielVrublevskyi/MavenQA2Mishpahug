@@ -24,6 +24,7 @@ public class TestBase {
   protected static Capabilities capabilities;
   public static final String LOGIN = "marinaA";
   public static final String PASSWORD = "marina1!";
+  public static final String FILTER_HOLIDAY_SHABBAT = "Shabbat";
 
   protected WebDriver driver;
 
