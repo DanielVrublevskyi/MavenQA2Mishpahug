@@ -5,6 +5,7 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import ru.stqa.selenium.pages.*;
+import ru.stqa.selenium.util.DataProviders;
 
 
 public class LoginPageTests extends TestBase{
@@ -33,11 +34,11 @@ public class LoginPageTests extends TestBase{
     }
 
 
-    @Test
-    public void loginNegative()  {
+    @Test(dataProviderClass = DataProviders.class, dataProvider = "randomStringUsers")
+    public void loginNegative(String login, String password)  {
         homePage.openLoginPage();
         loginPage.waitUntilPageIsLoaded()
-                .enterLoginPassword(LOGIN,  PASSWORD +"11")
+                .enterLoginPassword(login,  password)
                 .cancelModalWindowIfNoWrongMessage();
 
         Assert.assertTrue(loginPage.wrongMessageIsDisplayed());

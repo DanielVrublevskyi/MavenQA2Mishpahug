@@ -45,6 +45,11 @@ public class TestBase {
 
     driver = WebDriverPool.DEFAULT.getDriver(gridHubUrl, capabilities);
     driver.get(baseUrl);
+    try {
+      Thread.sleep(5000);
+    } catch (InterruptedException e) {
+      e.printStackTrace();
+    }
     driver.findElement(By.id("closedIntro")).click();
   }
 
