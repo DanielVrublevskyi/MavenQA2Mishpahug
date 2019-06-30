@@ -34,7 +34,17 @@ public class HomePageTests extends TestBase{
     public void singleFilterByHoliday(){
         homePage.chooseFilterHoliday(FILTER_HOLIDAY_SHABBAT)
                  .waitEventsListReloaded();
-       // Assert.assertTrue(homePage.isEventsHoliday(FILTER_HOLIDAY_SHABBAT));
+       Assert.assertTrue(homePage.isEventsHoliday(FILTER_HOLIDAY_SHABBAT));
+    }
+
+    @Test
+    public void doubleFilterByFoodConf(){
+        homePage.chooseFilterFood(FILTER_HOLIDAY_FOOD)
+                .waitEventsListReloaded()
+                .chooseFilterConf(FILTER_HOLIDAY_CONF)
+                .waitEventsListReloaded();
+        Assert.assertTrue(homePage.isEventsContainsPreference(FILTER_HOLIDAY_FOOD));
+        Assert.assertTrue(homePage.isEventsContainsPreference(FILTER_HOLIDAY_CONF));
     }
 
     @Test
@@ -68,6 +78,13 @@ public class HomePageTests extends TestBase{
                 .getWindowHandle());
         driver.close();
         driver.switchTo().window(mainHandle);
+    }
+    @Test
+    public void singleFilterByHolidaysEventsInWindow(){
+        homePage.chooseFilterHoliday(FILTER_HOLIDAY_SHABBAT)
+                .waitEventsListReloaded();
+        Assert.assertTrue(homePage.isEventsHolidayInWindow(FILTER_HOLIDAY_SHABBAT));
+
     }
 
 

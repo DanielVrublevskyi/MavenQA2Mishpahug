@@ -9,6 +9,7 @@ import java.util.List;
 
 import java.awt.*;
 import java.awt.event.KeyEvent;
+import java.util.Set;
 
 public abstract class PageBase {
     public WebDriver driver;
@@ -123,6 +124,24 @@ public abstract class PageBase {
         } catch(Exception e){
             e.printStackTrace();
         }
+    }
+
+    public void waitUntilNumberOfWindowsToBe(int num, int time){
+        try {
+            new WebDriverWait(driver,time)
+                    .until(ExpectedConditions.numberOfWindowsToBe(num));
+        } catch(Exception e){
+            e.printStackTrace();
+        }
+    }
+
+    public String getAnotherHandle(String mainHandle) {
+        Set<String> setHandles = driver.getWindowHandles();
+        String anotherHandle="";
+        for(String handle: setHandles){
+            if(!handle.equals(mainHandle)) anotherHandle=handle;
+        }
+        return anotherHandle;
     }
 
 }

@@ -25,6 +25,8 @@ public class TestBase {
   public static final String LOGIN = "marinaA";
   public static final String PASSWORD = "marina1!";
   public static final String FILTER_HOLIDAY_SHABBAT = "Shabbat";
+  public static final String FILTER_HOLIDAY_FOOD = "Kosher";
+  public static final String FILTER_HOLIDAY_CONF = "Irreligious";
 
   protected WebDriver driver;
 
