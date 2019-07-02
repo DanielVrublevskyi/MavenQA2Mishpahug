@@ -13,7 +13,7 @@ public class IntroWindowHelper extends PageBase {
     }
 
     public IntroWindowHelper waitUntilPageIsLoaded(){
-        waitUntilElementClickable(closedIntro,50);
+        waitUntilElementClickable(closedIntro,70);
         return this;
     }
 
