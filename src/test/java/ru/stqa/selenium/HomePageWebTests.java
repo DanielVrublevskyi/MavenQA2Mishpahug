@@ -7,6 +7,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import ru.stqa.selenium.pages.HomePageHelper;
 import ru.stqa.selenium.pages.LoginPageHelper;
+import ru.stqa.selenium.util.DataProviders;
 
 import java.util.Set;
 
@@ -29,11 +30,11 @@ public class HomePageWebTests extends TestBase{
         Assert.assertTrue(loginPage.itIsLoginPage());
     }
 
-    @Test
-    public void singleFilterByHoliday(){
-        homePage.chooseFilterHoliday(FILTER_HOLIDAY_SHABBAT)
+    @Test(dataProviderClass = DataProviders.class, dataProvider = "singleFilterByHolidayWeb")
+    public void singleFilterByHoliday(String holiday){
+        homePage.chooseFilterHoliday(holiday)
                 .waitEventsListReloaded();
-        Assert.assertTrue(homePage.isEventsHoliday(FILTER_HOLIDAY_SHABBAT));
+        Assert.assertTrue(homePage.isEventsHoliday(holiday));
     }
 
     @Test

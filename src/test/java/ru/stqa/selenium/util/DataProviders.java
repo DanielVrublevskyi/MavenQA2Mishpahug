@@ -25,6 +25,20 @@ public class DataProviders {
         in.close();
         return userData.iterator();
     }
+    @DataProvider
+    public static Iterator<Object[]> singleFilterByHolidayWeb() throws IOException {
+        BufferedReader in = new BufferedReader(new InputStreamReader(
+                DataProviders.class.getResourceAsStream("/DSingleFilterHolidayWeb.data")));
+
+        List<Object[]> userData = new ArrayList<Object[]>();
+        String line = in.readLine();
+        while (line != null) {
+            userData.add(line.split(";"));
+            line = in.readLine();
+        }
+        in.close();
+        return userData.iterator();
+    }
 
     @DataProvider
     public static Iterator<Object[]> loginNegative() throws IOException {
@@ -75,7 +89,7 @@ public class DataProviders {
     public Iterator<Object[]> randomStringUsers() {
         List<Object[]> data = new ArrayList();
 
-        for(int i = 0; i < 5; ++i) {
+        for(int i = 0; i < 2; ++i) {
             data.add(new Object[]{this.generateRandomString(5), this.generateRandomString(10)});
         }
 
