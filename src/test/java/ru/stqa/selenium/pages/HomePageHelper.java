@@ -45,8 +45,8 @@ public class HomePageHelper extends PageBase{
 
     public HomePageHelper waitUntilPageIsLoaded(){
 
-        waitUntilElementClickable(loginIcon,20);
-        waitUntilAllElementsVisible(listEvents,20);
+        waitUntilElementClickable(loginIcon,40);
+        waitUntilAllElementsVisible(listEvents,40);
 
         return this;
     }
@@ -99,12 +99,12 @@ public class HomePageHelper extends PageBase{
 
     public HomePageHelper waitEventsListReloaded() {
         try{
-            new WebDriverWait(driver, 10)
+            new WebDriverWait(driver, 20)
                     .until(ExpectedConditions.visibilityOfAllElements(listEvents));
         } catch(Exception e){
             try {
                 Thread.sleep(1000);
-                waitUntilAllElementsVisible(listEvents,20);
+                waitUntilAllElementsVisible(listEvents,40);
             } catch (InterruptedException ex) {
                 ex.printStackTrace();
             }

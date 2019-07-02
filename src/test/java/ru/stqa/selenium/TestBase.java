@@ -3,16 +3,17 @@ package ru.stqa.selenium;
 import java.io.IOException;
 import java.net.URL;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.Capabilities;
 
+import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 
 import ru.stqa.selenium.factory.WebDriverPool;
+import ru.stqa.selenium.pages.IntroWindowHelper;
 
 /**
  * Base class for TestNG-based test classes
@@ -29,6 +30,7 @@ public class TestBase {
   public static final String FILTER_HOLIDAY_CONF = "Irreligious";
 
   protected WebDriver driver;
+  protected IntroWindowHelper introWindow;
 
   @BeforeSuite
   public void initTestSuite() throws IOException {
@@ -45,12 +47,8 @@ public class TestBase {
 
     driver = WebDriverPool.DEFAULT.getDriver(gridHubUrl, capabilities);
     driver.get(baseUrl);
-    try {
-      Thread.sleep(5000);
-    } catch (InterruptedException e) {
-      e.printStackTrace();
-    }
-    driver.findElement(By.id("closedIntro")).click();
+    introWindow = PageFactory.initElements(driver, IntroWindowHelper.class);
+    introWindow.waitUntilPageIsLoaded().closeWindow();
   }
 
   @AfterMethod

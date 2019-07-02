@@ -34,7 +34,7 @@ public class LoginPageTests extends TestBase{
     }
 
 
-    @Test(dataProviderClass = DataProviders.class, dataProvider = "randomStringUsers")
+    @Test(dataProviderClass = DataProviders.class, dataProvider = "loginNegative")
     public void loginNegative(String login, String password)  {
         homePage.openLoginPage();
         loginPage.waitUntilPageIsLoaded()
