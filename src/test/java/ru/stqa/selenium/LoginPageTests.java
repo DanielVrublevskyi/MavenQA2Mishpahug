@@ -30,7 +30,8 @@ public class LoginPageTests extends TestBase{
         loginPage.waitUntilPageIsLoaded()
                  .enterLoginPassword(LOGIN, PASSWORD);
         homePageAuth.waitUntilPageIsLoaded();
-        Assert.assertTrue(homePageAuth.profileButtonTitleContainsText(LOGIN));
+        Assert.assertTrue(homePageAuth.profileButtonTitleContainsText(LOGIN),
+                "Not passed. Profile button title doesn't contain " + LOGIN);
     }
 
 
@@ -41,7 +42,8 @@ public class LoginPageTests extends TestBase{
                 .enterLoginPassword(login,  password)
                 .cancelModalWindowIfNoWrongMessage();
 
-        Assert.assertTrue(loginPage.wrongMessageIsDisplayed());
+        Assert.assertTrue(loginPage.wrongMessageIsDisplayed(),
+                "Not Passed. Wrong message wasn't displayed.");
         loginPage.closeLoginWindow();
         homePage.waitUntilPageIsLoaded();
         int counter = 0;
@@ -51,7 +53,8 @@ public class LoginPageTests extends TestBase{
         if(homePage.homeAuthIconIsHidden()) counter++;
         if(homePage.profileIconIsHidden()) counter++;
 
-        Assert.assertEquals(counter,5);
+        Assert.assertEquals(counter,5,
+                "Not passed. Not all icons were displayed/hidden correctly");
 
 
     }

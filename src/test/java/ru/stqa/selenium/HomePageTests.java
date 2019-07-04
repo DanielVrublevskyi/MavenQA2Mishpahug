@@ -26,16 +26,27 @@ public class HomePageTests extends TestBase{
 
     @Test
     public void loginPageIsLoadedTest(){
+        log.startTestCase("loginPageIsLoadedTest");
+        log.info("Open login page");
         homePage.openLoginPage();
+        log.info("Wait until page is loaded");
         loginPage.waitUntilPageIsLoaded();
-        Assert.assertTrue(loginPage.itIsLoginPage());
+        log.info("Assert: Verify if it is login page");
+        Assert.assertTrue(loginPage.itIsLoginPage(),
+                "Not Passed. It is not login page. There is no SignIn button.");
+        log.endTestCase("loginPageIsLoadedTest");
     }
 
     @Test (dataProviderClass = DataProviders.class, dataProvider = "singleFilterByHoliday")
     public void singleFilterByHoliday(String holiday){
+        log.startTestCase("singleFilterByHoliday-" + holiday);
+        log.info("Choose filter by" + holiday);
         homePage.chooseFilterHoliday(holiday)
                  .waitEventsListReloaded();
-       Assert.assertTrue(homePage.isEventsHoliday(holiday));
+        log.info("Assert: Verify if holiday of all events are" + holiday);
+       Assert.assertTrue(homePage.isEventsHoliday(holiday),
+               "Not passed. Exists event with another holiday value (not " + holiday);
+       log.endTestCase("singleFilterByHoliday-" + holiday);
     }
 
     @Test
@@ -44,8 +55,10 @@ public class HomePageTests extends TestBase{
                 .waitEventsListReloaded()
                 .chooseFilterConf(FILTER_HOLIDAY_CONF)
                 .waitEventsListReloaded();
-        Assert.assertTrue(homePage.isEventsContainsPreference(FILTER_HOLIDAY_FOOD));
-        Assert.assertTrue(homePage.isEventsContainsPreference(FILTER_HOLIDAY_CONF));
+        Assert.assertTrue(homePage.isEventsContainsPreference(FILTER_HOLIDAY_FOOD),
+                "Not passed. Not all events contain food value" + FILTER_HOLIDAY_FOOD);
+        Assert.assertTrue(homePage.isEventsContainsPreference(FILTER_HOLIDAY_CONF),
+                "Not passed. Not all events contain confession value " + FILTER_HOLIDAY_CONF);
     }
 
     @Test
@@ -84,7 +97,8 @@ public class HomePageTests extends TestBase{
     public void singleFilterByHolidaysEventsInWindow(){
         homePage.chooseFilterHoliday(FILTER_HOLIDAY_SHABBAT)
                 .waitEventsListReloaded();
-        Assert.assertTrue(homePage.isEventsHolidayInWindow(FILTER_HOLIDAY_SHABBAT));
+        Assert.assertTrue(homePage.isEventsHolidayInWindow(FILTER_HOLIDAY_SHABBAT),
+                "Not passed. Exists event with another holiday value (not " + FILTER_HOLIDAY_SHABBAT);
 
     }
 

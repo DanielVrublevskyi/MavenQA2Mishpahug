@@ -80,6 +80,7 @@ public class HomePageHelper extends PageBase{
 
 
     public HomePageHelper chooseFilterHoliday(String value) {
+        log.info("---Method:chooseFilterHoliday, value =" + value);
     Select selector = new Select(filterHoliday);
     selector.selectByValue(value);
     return this;
@@ -98,6 +99,7 @@ public class HomePageHelper extends PageBase{
     }
 
     public HomePageHelper waitEventsListReloaded() {
+        log.info("--Method: waitEventsListReloaded-");
         try{
             new WebDriverWait(driver, 20)
                     .until(ExpectedConditions.visibilityOfAllElements(listEvents));

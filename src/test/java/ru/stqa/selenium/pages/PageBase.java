@@ -1,10 +1,13 @@
 package ru.stqa.selenium.pages;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import ru.stqa.selenium.util.LogLog4j;
+
 import java.util.List;
 
 import java.awt.*;
@@ -13,6 +16,8 @@ import java.util.Set;
 
 public abstract class PageBase {
     public WebDriver driver;
+    public static Logger Log = Logger.getLogger(LogLog4j.class.getName());
+    public static LogLog4j log = new LogLog4j();
 
     public PageBase(WebDriver driver) {
         this.driver = driver;

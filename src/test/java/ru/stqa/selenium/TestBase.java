@@ -3,6 +3,7 @@ package ru.stqa.selenium;
 import java.io.IOException;
 import java.net.URL;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.Capabilities;
 
@@ -14,6 +15,7 @@ import org.testng.annotations.BeforeSuite;
 
 import ru.stqa.selenium.factory.WebDriverPool;
 import ru.stqa.selenium.pages.IntroWindowHelper;
+import ru.stqa.selenium.util.LogLog4j;
 
 /**
  * Base class for TestNG-based test classes
@@ -28,6 +30,9 @@ public class TestBase {
   public static final String FILTER_HOLIDAY_SHABBAT = "Shabbat";
   public static final String FILTER_HOLIDAY_FOOD = "Kosher";
   public static final String FILTER_HOLIDAY_CONF = "Irreligious";
+  public static Logger Log = Logger.getLogger(LogLog4j.class.getName());
+  public static LogLog4j log = new LogLog4j();
+
 
   protected WebDriver driver;
   protected IntroWindowHelper introWindow;
