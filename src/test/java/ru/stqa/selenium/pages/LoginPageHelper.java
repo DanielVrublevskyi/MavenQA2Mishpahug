@@ -26,7 +26,10 @@ public class LoginPageHelper extends PageBase {
     }
 
     public LoginPageHelper waitUntilPageIsLoaded() {
+        log.info("LoginPageHelper: waitUntilPageIsLoaded method was started");
+        log.info("Wait until SignIn button is clickable");
         waitUntilElementClickable(signInButton, 20);
+        log.info("LoginPageHelper: waitUntilPageIsLoaded method was finished");
         return this;
     }
 

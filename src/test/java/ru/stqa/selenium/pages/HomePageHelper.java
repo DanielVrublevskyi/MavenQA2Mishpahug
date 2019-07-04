@@ -44,15 +44,20 @@ public class HomePageHelper extends PageBase{
     }
 
     public HomePageHelper waitUntilPageIsLoaded(){
-
+        log.info("HomePageHelper: waitUntilPageIsLoaded method was started");
+        log.info("Wait Until Login icon element is clickable ");
         waitUntilElementClickable(loginIcon,40);
+        log.info("Wait Until all events are visible ");
         waitUntilAllElementsVisible(listEvents,40);
-
+        log.info("HomePageHelper: waitUntilPageIsLoaded method was finished");
         return this;
     }
 
     public HomePageHelper openLoginPage() {
+        log.info("HomePageHelper: openLoginPage method was started");
+        log.info("Click on Login icon");
         clickButton(loginIcon);
+        log.info("HomePageHelper: openLoginPage method was finished");
         return this;
     }
 

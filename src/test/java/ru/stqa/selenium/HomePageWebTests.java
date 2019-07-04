@@ -17,6 +17,7 @@ public class HomePageWebTests extends TestBase{
 
     @BeforeMethod
     public void initTest(){
+        log.info("@BeforeMethod - HomePageWebTests was started");
         homePage = PageFactory
                 .initElements(driver, HomePageHelper.class);
         loginPage = PageFactory.initElements(driver, LoginPageHelper.class);
@@ -25,16 +26,19 @@ public class HomePageWebTests extends TestBase{
 
     @Test
     public void loginPageIsLoadedTest(){
+        log.startTestCase("loginPageIsLoadedTest");
         homePage.openLoginPage();
         loginPage.waitUntilPageIsLoaded();
-        Assert.assertTrue(loginPage.itIsLoginPage());
+        Assert.assertTrue(loginPage.itIsLoginPage(),"Not passed. It is not login page.");
+        log.endTestCase("loginPageIsLoadedTest");
     }
 
     @Test(dataProviderClass = DataProviders.class, dataProvider = "singleFilterByHolidayWeb")
     public void singleFilterByHoliday(String holiday){
         homePage.chooseFilterHoliday(holiday)
                 .waitEventsListReloaded();
-        Assert.assertTrue(homePage.isEventsHoliday(holiday));
+        Assert.assertTrue(homePage.isEventsHoliday(holiday),
+                "Not passed. There is an event with another holiday (not " + holiday + ")");
     }
 
     @Test
