@@ -14,11 +14,13 @@ public class ViewEventPageHelper extends PageBase {
     }
 
     public ViewEventPageHelper waitUntilPageIsLoaded(){
+        log.info("---ViewPageHelper:waitUntilPageIsLoaded method was started" );
         waitUntilElementIsVisible(holidayEvent,30);
         return this;
     }
 
     public String getHolidayBanner(){
+        log.info("---ViewPageHelper:getHolidayBanner method was started" );
         return holidayEvent.getText();
     }
 }

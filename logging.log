@@ -1,0 +1,622 @@
+2019-07-07 11:07:04 INFO  LogLog4j:41 - ---HomePageHelper: waitUntilPageIsLoaded method was started
+2019-07-07 11:07:04 INFO  LogLog4j:41 - Wait Until Login icon element is clickable 
+2019-07-07 11:07:04 INFO  LogLog4j:41 - Wait Until all events are visible 
+2019-07-07 11:07:04 INFO  LogLog4j:41 - HomePageHelper: waitUntilPageIsLoaded method was finished
+2019-07-07 11:07:04 INFO  LogLog4j:15 - 
+2019-07-07 11:07:04 INFO  LogLog4j:16 - 
+2019-07-07 11:07:04 INFO  LogLog4j:17 - *******************************************************************
+2019-07-07 11:07:04 INFO  LogLog4j:18 -                    Test Case: doubleFilterByFoodConf
+2019-07-07 11:07:04 INFO  LogLog4j:19 - *******************************************************************
+2019-07-07 11:07:04 INFO  LogLog4j:41 - FILTER 'FOOD', PARAMETER: Kosher
+2019-07-07 11:07:04 INFO  LogLog4j:41 - FILTER 'CONFESSION',PARAMETER: Irreligious
+2019-07-07 11:07:04 INFO  LogLog4j:41 - ---HomePageHelper:chooseFilterFood method was started, value =Kosher
+2019-07-07 11:07:04 INFO  LogLog4j:41 - Select filter by FoodKosher
+2019-07-07 11:07:05 INFO  LogLog4j:41 - ---HomePageHelper:waitEventsListReloaded method was started
+2019-07-07 11:07:05 INFO  LogLog4j:41 - Try to wait until all events are loaded
+2019-07-07 11:07:05 INFO  LogLog4j:41 - On error try to wait 1000ms
+2019-07-07 11:07:06 INFO  LogLog4j:41 - Try to exec waitUntilAllElementsVisible(listEvents,40)
+2019-07-07 11:07:06 INFO  LogLog4j:41 - ---HomePageHelper:chooseFilterConf method was started, value =Irreligious
+2019-07-07 11:07:06 INFO  LogLog4j:41 - Select filter by ConfesionIrreligious
+2019-07-07 11:07:07 INFO  LogLog4j:41 - ---HomePageHelper:waitEventsListReloaded method was started
+2019-07-07 11:07:07 INFO  LogLog4j:41 - Try to wait until all events are loaded
+2019-07-07 11:07:07 INFO  LogLog4j:41 - On error try to wait 1000ms
+2019-07-07 11:07:08 INFO  LogLog4j:41 - Try to exec waitUntilAllElementsVisible(listEvents,40)
+2019-07-07 11:07:08 INFO  LogLog4j:41 - ---HomePageHelper:isEventsContainsPreference method was started, value = Kosher
+2019-07-07 11:07:08 INFO  LogLog4j:41 - Before the circle of searching elements in events list, counter = 0
+2019-07-07 11:07:08 INFO  LogLog4j:41 - After the circle of searching  elements in events list, counter = 3
+2019-07-07 11:07:08 INFO  LogLog4j:41 - ---HomePageHelper:isEventsContainsPreference method was started, value = Irreligious
+2019-07-07 11:07:08 INFO  LogLog4j:41 - Before the circle of searching elements in events list, counter = 0
+2019-07-07 11:07:08 INFO  LogLog4j:41 - After the circle of searching  elements in events list, counter = 3
+2019-07-07 11:07:08 INFO  LogLog4j:28 - ***********************************************
+2019-07-07 11:07:08 INFO  LogLog4j:29 - ***************             -E---N---D-
+2019-07-07 11:07:08 INFO  LogLog4j:30 - ***********************************************
+2019-07-07 11:07:08 INFO  LogLog4j:31 - 
+2019-07-07 11:07:08 INFO  LogLog4j:32 - 
+2019-07-07 11:07:15 INFO  LogLog4j:41 - ---HomePageHelper: waitUntilPageIsLoaded method was started
+2019-07-07 11:07:15 INFO  LogLog4j:41 - Wait Until Login icon element is clickable 
+2019-07-07 11:07:15 INFO  LogLog4j:41 - Wait Until all events are visible 
+2019-07-07 11:07:16 INFO  LogLog4j:41 - HomePageHelper: waitUntilPageIsLoaded method was finished
+2019-07-07 11:07:16 INFO  LogLog4j:15 - 
+2019-07-07 11:07:16 INFO  LogLog4j:16 - 
+2019-07-07 11:07:16 INFO  LogLog4j:17 - *******************************************************************
+2019-07-07 11:07:16 INFO  LogLog4j:18 -                    Test Case: loginPageIsLoadedTest
+2019-07-07 11:07:16 INFO  LogLog4j:19 - *******************************************************************
+2019-07-07 11:07:16 INFO  LogLog4j:41 - Open login page
+2019-07-07 11:07:16 INFO  LogLog4j:41 - ---HomePageHelper: openLoginPage method was started
+2019-07-07 11:07:16 INFO  LogLog4j:41 - Click on Login icon
+2019-07-07 11:07:16 INFO  LogLog4j:41 - HomePageHelper: openLoginPage method was finished
+2019-07-07 11:07:16 INFO  LogLog4j:41 - Wait until page is loaded
+2019-07-07 11:07:16 INFO  LogLog4j:41 - LoginPageHelper: waitUntilPageIsLoaded method was started
+2019-07-07 11:07:16 INFO  LogLog4j:41 - Wait until SignIn button is clickable
+2019-07-07 11:07:16 INFO  LogLog4j:41 - LoginPageHelper: waitUntilPageIsLoaded method was finished
+2019-07-07 11:07:16 INFO  LogLog4j:41 - Assert: Verify if it is login page
+2019-07-07 11:07:16 INFO  LogLog4j:28 - ***********************************************
+2019-07-07 11:07:16 INFO  LogLog4j:29 - ***************             -E---N---D-
+2019-07-07 11:07:16 INFO  LogLog4j:30 - ***********************************************
+2019-07-07 11:07:16 INFO  LogLog4j:31 - 
+2019-07-07 11:07:16 INFO  LogLog4j:32 - 
+2019-07-07 11:07:23 INFO  LogLog4j:41 - ---HomePageHelper: waitUntilPageIsLoaded method was started
+2019-07-07 11:07:23 INFO  LogLog4j:41 - Wait Until Login icon element is clickable 
+2019-07-07 11:07:23 INFO  LogLog4j:41 - Wait Until all events are visible 
+2019-07-07 11:07:24 INFO  LogLog4j:41 - HomePageHelper: waitUntilPageIsLoaded method was finished
+2019-07-07 11:07:24 INFO  LogLog4j:15 - 
+2019-07-07 11:07:24 INFO  LogLog4j:16 - 
+2019-07-07 11:07:24 INFO  LogLog4j:17 - *******************************************************************
+2019-07-07 11:07:24 INFO  LogLog4j:18 -                    Test Case: singleFilterByHoliday
+2019-07-07 11:07:24 INFO  LogLog4j:19 - *******************************************************************
+2019-07-07 11:07:24 INFO  LogLog4j:41 - PARAMETER: Other
+2019-07-07 11:07:24 INFO  LogLog4j:41 - Choose filter byOther
+2019-07-07 11:07:24 INFO  LogLog4j:41 - ---HomePageHelper:chooseFilterHoliday method was started, value =Other
+2019-07-07 11:07:24 INFO  LogLog4j:41 - Select filter by HolidayOther
+2019-07-07 11:07:24 INFO  LogLog4j:41 - ---HomePageHelper:waitEventsListReloaded method was started
+2019-07-07 11:07:24 INFO  LogLog4j:41 - Try to wait until all events are loaded
+2019-07-07 11:07:24 INFO  LogLog4j:41 - On error try to wait 1000ms
+2019-07-07 11:07:25 INFO  LogLog4j:41 - Try to exec waitUntilAllElementsVisible(listEvents,40)
+2019-07-07 11:07:26 INFO  LogLog4j:41 - Assert: Verify if holiday of all events areOther
+2019-07-07 11:07:26 INFO  LogLog4j:41 - ---HomePageHelper:isEventsHoliday method was started, value = Other
+2019-07-07 11:07:26 INFO  LogLog4j:41 - Before the circle of searching elements in events list, counter = 0
+2019-07-07 11:07:26 INFO  LogLog4j:41 - After the circle of searching  elements in events list, counter = 3
+2019-07-07 11:07:26 INFO  LogLog4j:28 - ***********************************************
+2019-07-07 11:07:26 INFO  LogLog4j:29 - ***************             -E---N---D-
+2019-07-07 11:07:26 INFO  LogLog4j:30 - ***********************************************
+2019-07-07 11:07:26 INFO  LogLog4j:31 - 
+2019-07-07 11:07:26 INFO  LogLog4j:32 - 
+2019-07-07 11:07:32 INFO  LogLog4j:41 - ---HomePageHelper: waitUntilPageIsLoaded method was started
+2019-07-07 11:07:32 INFO  LogLog4j:41 - Wait Until Login icon element is clickable 
+2019-07-07 11:07:32 INFO  LogLog4j:41 - Wait Until all events are visible 
+2019-07-07 11:07:33 INFO  LogLog4j:41 - HomePageHelper: waitUntilPageIsLoaded method was finished
+2019-07-07 11:07:33 INFO  LogLog4j:15 - 
+2019-07-07 11:07:33 INFO  LogLog4j:16 - 
+2019-07-07 11:07:33 INFO  LogLog4j:17 - *******************************************************************
+2019-07-07 11:07:33 INFO  LogLog4j:18 -                    Test Case: singleFilterByHoliday
+2019-07-07 11:07:33 INFO  LogLog4j:19 - *******************************************************************
+2019-07-07 11:07:33 INFO  LogLog4j:41 - PARAMETER: Shabbat
+2019-07-07 11:07:33 INFO  LogLog4j:41 - Choose filter byShabbat
+2019-07-07 11:07:33 INFO  LogLog4j:41 - ---HomePageHelper:chooseFilterHoliday method was started, value =Shabbat
+2019-07-07 11:07:33 INFO  LogLog4j:41 - Select filter by HolidayShabbat
+2019-07-07 11:07:34 INFO  LogLog4j:41 - ---HomePageHelper:waitEventsListReloaded method was started
+2019-07-07 11:07:34 INFO  LogLog4j:41 - Try to wait until all events are loaded
+2019-07-07 11:07:34 INFO  LogLog4j:41 - On error try to wait 1000ms
+2019-07-07 11:07:35 INFO  LogLog4j:41 - Try to exec waitUntilAllElementsVisible(listEvents,40)
+2019-07-07 11:07:35 INFO  LogLog4j:41 - Assert: Verify if holiday of all events areShabbat
+2019-07-07 11:07:35 INFO  LogLog4j:41 - ---HomePageHelper:isEventsHoliday method was started, value = Shabbat
+2019-07-07 11:07:35 INFO  LogLog4j:41 - Before the circle of searching elements in events list, counter = 0
+2019-07-07 11:07:35 INFO  LogLog4j:41 - After the circle of searching  elements in events list, counter = 4
+2019-07-07 11:07:35 INFO  LogLog4j:28 - ***********************************************
+2019-07-07 11:07:35 INFO  LogLog4j:29 - ***************             -E---N---D-
+2019-07-07 11:07:35 INFO  LogLog4j:30 - ***********************************************
+2019-07-07 11:07:35 INFO  LogLog4j:31 - 
+2019-07-07 11:07:35 INFO  LogLog4j:32 - 
+2019-07-07 11:07:41 INFO  LogLog4j:41 - ---HomePageHelper: waitUntilPageIsLoaded method was started
+2019-07-07 11:07:41 INFO  LogLog4j:41 - Wait Until Login icon element is clickable 
+2019-07-07 11:07:42 INFO  LogLog4j:41 - Wait Until all events are visible 
+2019-07-07 11:07:43 INFO  LogLog4j:41 - HomePageHelper: waitUntilPageIsLoaded method was finished
+2019-07-07 11:07:43 INFO  LogLog4j:15 - 
+2019-07-07 11:07:43 INFO  LogLog4j:16 - 
+2019-07-07 11:07:43 INFO  LogLog4j:17 - *******************************************************************
+2019-07-07 11:07:43 INFO  LogLog4j:18 -                    Test Case: singleFilterByHoliday
+2019-07-07 11:07:43 INFO  LogLog4j:19 - *******************************************************************
+2019-07-07 11:07:43 INFO  LogLog4j:41 - PARAMETER: Purim
+2019-07-07 11:07:43 INFO  LogLog4j:41 - Choose filter byPurim
+2019-07-07 11:07:43 INFO  LogLog4j:41 - ---HomePageHelper:chooseFilterHoliday method was started, value =Purim
+2019-07-07 11:07:43 INFO  LogLog4j:41 - Select filter by HolidayPurim
+2019-07-07 11:07:43 INFO  LogLog4j:41 - ---HomePageHelper:waitEventsListReloaded method was started
+2019-07-07 11:07:43 INFO  LogLog4j:41 - Try to wait until all events are loaded
+2019-07-07 11:07:43 INFO  LogLog4j:41 - On error try to wait 1000ms
+2019-07-07 11:07:44 INFO  LogLog4j:41 - Try to exec waitUntilAllElementsVisible(listEvents,40)
+2019-07-07 11:07:44 INFO  LogLog4j:41 - Assert: Verify if holiday of all events arePurim
+2019-07-07 11:07:44 INFO  LogLog4j:41 - ---HomePageHelper:isEventsHoliday method was started, value = Purim
+2019-07-07 11:07:44 INFO  LogLog4j:41 - Before the circle of searching elements in events list, counter = 0
+2019-07-07 11:07:44 INFO  LogLog4j:41 - After the circle of searching  elements in events list, counter = 2
+2019-07-07 11:07:45 INFO  LogLog4j:28 - ***********************************************
+2019-07-07 11:07:45 INFO  LogLog4j:29 - ***************             -E---N---D-
+2019-07-07 11:07:45 INFO  LogLog4j:30 - ***********************************************
+2019-07-07 11:07:45 INFO  LogLog4j:31 - 
+2019-07-07 11:07:45 INFO  LogLog4j:32 - 
+2019-07-07 11:07:51 INFO  LogLog4j:41 - ---HomePageHelper: waitUntilPageIsLoaded method was started
+2019-07-07 11:07:51 INFO  LogLog4j:41 - Wait Until Login icon element is clickable 
+2019-07-07 11:07:51 INFO  LogLog4j:41 - Wait Until all events are visible 
+2019-07-07 11:07:52 INFO  LogLog4j:41 - HomePageHelper: waitUntilPageIsLoaded method was finished
+2019-07-07 11:07:52 INFO  LogLog4j:15 - 
+2019-07-07 11:07:52 INFO  LogLog4j:16 - 
+2019-07-07 11:07:52 INFO  LogLog4j:17 - *******************************************************************
+2019-07-07 11:07:52 INFO  LogLog4j:18 -                    Test Case: singleFilterByHoliday
+2019-07-07 11:07:52 INFO  LogLog4j:19 - *******************************************************************
+2019-07-07 11:07:52 INFO  LogLog4j:41 - PARAMETER: Pesach
+2019-07-07 11:07:52 INFO  LogLog4j:41 - Choose filter byPesach
+2019-07-07 11:07:52 INFO  LogLog4j:41 - ---HomePageHelper:chooseFilterHoliday method was started, value =Pesach
+2019-07-07 11:07:52 INFO  LogLog4j:41 - Select filter by HolidayPesach
+2019-07-07 11:07:52 INFO  LogLog4j:41 - ---HomePageHelper:waitEventsListReloaded method was started
+2019-07-07 11:07:52 INFO  LogLog4j:41 - Try to wait until all events are loaded
+2019-07-07 11:07:52 INFO  LogLog4j:41 - On error try to wait 1000ms
+2019-07-07 11:07:53 INFO  LogLog4j:41 - Try to exec waitUntilAllElementsVisible(listEvents,40)
+2019-07-07 11:07:54 INFO  LogLog4j:41 - Assert: Verify if holiday of all events arePesach
+2019-07-07 11:07:54 INFO  LogLog4j:41 - ---HomePageHelper:isEventsHoliday method was started, value = Pesach
+2019-07-07 11:07:54 INFO  LogLog4j:41 - Before the circle of searching elements in events list, counter = 0
+2019-07-07 11:07:54 INFO  LogLog4j:41 - After the circle of searching  elements in events list, counter = 1
+2019-07-07 11:07:54 INFO  LogLog4j:28 - ***********************************************
+2019-07-07 11:07:54 INFO  LogLog4j:29 - ***************             -E---N---D-
+2019-07-07 11:07:54 INFO  LogLog4j:30 - ***********************************************
+2019-07-07 11:07:54 INFO  LogLog4j:31 - 
+2019-07-07 11:07:54 INFO  LogLog4j:32 - 
+2019-07-07 11:08:00 INFO  LogLog4j:41 - ---HomePageHelper: waitUntilPageIsLoaded method was started
+2019-07-07 11:08:00 INFO  LogLog4j:41 - Wait Until Login icon element is clickable 
+2019-07-07 11:08:00 INFO  LogLog4j:41 - Wait Until all events are visible 
+2019-07-07 11:08:01 INFO  LogLog4j:41 - HomePageHelper: waitUntilPageIsLoaded method was finished
+2019-07-07 11:08:01 INFO  LogLog4j:15 - 
+2019-07-07 11:08:01 INFO  LogLog4j:16 - 
+2019-07-07 11:08:01 INFO  LogLog4j:17 - *******************************************************************
+2019-07-07 11:08:01 INFO  LogLog4j:18 -                    Test Case: singleFilterByHoliday
+2019-07-07 11:08:01 INFO  LogLog4j:19 - *******************************************************************
+2019-07-07 11:08:01 INFO  LogLog4j:41 - PARAMETER: Circumcision
+2019-07-07 11:08:01 INFO  LogLog4j:41 - Choose filter byCircumcision
+2019-07-07 11:08:01 INFO  LogLog4j:41 - ---HomePageHelper:chooseFilterHoliday method was started, value =Circumcision
+2019-07-07 11:08:01 INFO  LogLog4j:41 - Select filter by HolidayCircumcision
+2019-07-07 11:08:02 INFO  LogLog4j:41 - ---HomePageHelper:waitEventsListReloaded method was started
+2019-07-07 11:08:02 INFO  LogLog4j:41 - Try to wait until all events are loaded
+2019-07-07 11:08:02 INFO  LogLog4j:41 - On error try to wait 1000ms
+2019-07-07 11:08:03 INFO  LogLog4j:41 - Try to exec waitUntilAllElementsVisible(listEvents,40)
+2019-07-07 11:08:03 INFO  LogLog4j:41 - Assert: Verify if holiday of all events areCircumcision
+2019-07-07 11:08:03 INFO  LogLog4j:41 - ---HomePageHelper:isEventsHoliday method was started, value = Circumcision
+2019-07-07 11:08:03 INFO  LogLog4j:41 - Before the circle of searching elements in events list, counter = 0
+2019-07-07 11:08:03 INFO  LogLog4j:41 - After the circle of searching  elements in events list, counter = 2
+2019-07-07 11:08:03 INFO  LogLog4j:28 - ***********************************************
+2019-07-07 11:08:03 INFO  LogLog4j:29 - ***************             -E---N---D-
+2019-07-07 11:08:03 INFO  LogLog4j:30 - ***********************************************
+2019-07-07 11:08:03 INFO  LogLog4j:31 - 
+2019-07-07 11:08:03 INFO  LogLog4j:32 - 
+2019-07-07 11:08:09 INFO  LogLog4j:41 - ---HomePageHelper: waitUntilPageIsLoaded method was started
+2019-07-07 11:08:09 INFO  LogLog4j:41 - Wait Until Login icon element is clickable 
+2019-07-07 11:08:10 INFO  LogLog4j:41 - Wait Until all events are visible 
+2019-07-07 11:08:10 INFO  LogLog4j:41 - HomePageHelper: waitUntilPageIsLoaded method was finished
+2019-07-07 11:08:10 INFO  LogLog4j:15 - 
+2019-07-07 11:08:10 INFO  LogLog4j:16 - 
+2019-07-07 11:08:10 INFO  LogLog4j:17 - *******************************************************************
+2019-07-07 11:08:10 INFO  LogLog4j:18 -                    Test Case: singleFilterByHoliday
+2019-07-07 11:08:10 INFO  LogLog4j:19 - *******************************************************************
+2019-07-07 11:08:10 INFO  LogLog4j:41 - PARAMETER: Bar Mitzvah
+2019-07-07 11:08:10 INFO  LogLog4j:41 - Choose filter byBar Mitzvah
+2019-07-07 11:08:10 INFO  LogLog4j:41 - ---HomePageHelper:chooseFilterHoliday method was started, value =Bar Mitzvah
+2019-07-07 11:08:10 INFO  LogLog4j:41 - Select filter by HolidayBar Mitzvah
+2019-07-07 11:08:10 INFO  LogLog4j:41 - ---HomePageHelper:waitEventsListReloaded method was started
+2019-07-07 11:08:10 INFO  LogLog4j:41 - Try to wait until all events are loaded
+2019-07-07 11:08:11 INFO  LogLog4j:41 - On error try to wait 1000ms
+2019-07-07 11:08:12 INFO  LogLog4j:41 - Try to exec waitUntilAllElementsVisible(listEvents,40)
+2019-07-07 11:08:12 INFO  LogLog4j:41 - Assert: Verify if holiday of all events areBar Mitzvah
+2019-07-07 11:08:12 INFO  LogLog4j:41 - ---HomePageHelper:isEventsHoliday method was started, value = Bar Mitzvah
+2019-07-07 11:08:12 INFO  LogLog4j:41 - Before the circle of searching elements in events list, counter = 0
+2019-07-07 11:08:12 INFO  LogLog4j:41 - After the circle of searching  elements in events list, counter = 1
+2019-07-07 11:08:12 INFO  LogLog4j:28 - ***********************************************
+2019-07-07 11:08:12 INFO  LogLog4j:29 - ***************             -E---N---D-
+2019-07-07 11:08:12 INFO  LogLog4j:30 - ***********************************************
+2019-07-07 11:08:12 INFO  LogLog4j:31 - 
+2019-07-07 11:08:12 INFO  LogLog4j:32 - 
+2019-07-07 11:08:18 INFO  LogLog4j:41 - ---HomePageHelper: waitUntilPageIsLoaded method was started
+2019-07-07 11:08:18 INFO  LogLog4j:41 - Wait Until Login icon element is clickable 
+2019-07-07 11:08:18 INFO  LogLog4j:41 - Wait Until all events are visible 
+2019-07-07 11:08:19 INFO  LogLog4j:41 - HomePageHelper: waitUntilPageIsLoaded method was finished
+2019-07-07 11:08:19 INFO  LogLog4j:15 - 
+2019-07-07 11:08:19 INFO  LogLog4j:16 - 
+2019-07-07 11:08:19 INFO  LogLog4j:17 - *******************************************************************
+2019-07-07 11:08:19 INFO  LogLog4j:18 -                    Test Case: singleFilterByHoliday
+2019-07-07 11:08:19 INFO  LogLog4j:19 - *******************************************************************
+2019-07-07 11:08:19 INFO  LogLog4j:41 - PARAMETER: Bat Mitzvah
+2019-07-07 11:08:19 INFO  LogLog4j:41 - Choose filter byBat Mitzvah
+2019-07-07 11:08:19 INFO  LogLog4j:41 - ---HomePageHelper:chooseFilterHoliday method was started, value =Bat Mitzvah
+2019-07-07 11:08:19 INFO  LogLog4j:41 - Select filter by HolidayBat Mitzvah
+2019-07-07 11:08:19 INFO  LogLog4j:41 - ---HomePageHelper:waitEventsListReloaded method was started
+2019-07-07 11:08:19 INFO  LogLog4j:41 - Try to wait until all events are loaded
+2019-07-07 11:08:19 INFO  LogLog4j:41 - On error try to wait 1000ms
+2019-07-07 11:08:20 INFO  LogLog4j:41 - Try to exec waitUntilAllElementsVisible(listEvents,40)
+2019-07-07 11:08:21 INFO  LogLog4j:41 - Assert: Verify if holiday of all events areBat Mitzvah
+2019-07-07 11:08:21 INFO  LogLog4j:41 - ---HomePageHelper:isEventsHoliday method was started, value = Bat Mitzvah
+2019-07-07 11:08:21 INFO  LogLog4j:41 - Before the circle of searching elements in events list, counter = 0
+2019-07-07 11:08:21 INFO  LogLog4j:41 - After the circle of searching  elements in events list, counter = 1
+2019-07-07 11:08:21 INFO  LogLog4j:28 - ***********************************************
+2019-07-07 11:08:21 INFO  LogLog4j:29 - ***************             -E---N---D-
+2019-07-07 11:08:21 INFO  LogLog4j:30 - ***********************************************
+2019-07-07 11:08:21 INFO  LogLog4j:31 - 
+2019-07-07 11:08:21 INFO  LogLog4j:32 - 
+2019-07-07 11:08:27 INFO  LogLog4j:41 - ---HomePageHelper: waitUntilPageIsLoaded method was started
+2019-07-07 11:08:27 INFO  LogLog4j:41 - Wait Until Login icon element is clickable 
+2019-07-07 11:08:27 INFO  LogLog4j:41 - Wait Until all events are visible 
+2019-07-07 11:08:28 INFO  LogLog4j:41 - HomePageHelper: waitUntilPageIsLoaded method was finished
+2019-07-07 11:08:28 INFO  LogLog4j:15 - 
+2019-07-07 11:08:28 INFO  LogLog4j:16 - 
+2019-07-07 11:08:28 INFO  LogLog4j:17 - *******************************************************************
+2019-07-07 11:08:28 INFO  LogLog4j:18 -                    Test Case: singleFilterByHoliday
+2019-07-07 11:08:28 INFO  LogLog4j:19 - *******************************************************************
+2019-07-07 11:08:28 INFO  LogLog4j:41 - PARAMETER: Wedding
+2019-07-07 11:08:28 INFO  LogLog4j:41 - Choose filter byWedding
+2019-07-07 11:08:28 INFO  LogLog4j:41 - ---HomePageHelper:chooseFilterHoliday method was started, value =Wedding
+2019-07-07 11:08:28 INFO  LogLog4j:41 - Select filter by HolidayWedding
+2019-07-07 11:08:29 INFO  LogLog4j:41 - ---HomePageHelper:waitEventsListReloaded method was started
+2019-07-07 11:08:29 INFO  LogLog4j:41 - Try to wait until all events are loaded
+2019-07-07 11:08:29 INFO  LogLog4j:41 - On error try to wait 1000ms
+2019-07-07 11:08:30 INFO  LogLog4j:41 - Try to exec waitUntilAllElementsVisible(listEvents,40)
+2019-07-07 11:08:30 INFO  LogLog4j:41 - Assert: Verify if holiday of all events areWedding
+2019-07-07 11:08:30 INFO  LogLog4j:41 - ---HomePageHelper:isEventsHoliday method was started, value = Wedding
+2019-07-07 11:08:30 INFO  LogLog4j:41 - Before the circle of searching elements in events list, counter = 0
+2019-07-07 11:08:30 INFO  LogLog4j:41 - After the circle of searching  elements in events list, counter = 1
+2019-07-07 11:08:30 INFO  LogLog4j:28 - ***********************************************
+2019-07-07 11:08:30 INFO  LogLog4j:29 - ***************             -E---N---D-
+2019-07-07 11:08:30 INFO  LogLog4j:30 - ***********************************************
+2019-07-07 11:08:30 INFO  LogLog4j:31 - 
+2019-07-07 11:08:30 INFO  LogLog4j:32 - 
+2019-07-07 11:08:37 INFO  LogLog4j:41 - ---HomePageHelper: waitUntilPageIsLoaded method was started
+2019-07-07 11:08:37 INFO  LogLog4j:41 - Wait Until Login icon element is clickable 
+2019-07-07 11:08:37 INFO  LogLog4j:41 - Wait Until all events are visible 
+2019-07-07 11:08:38 INFO  LogLog4j:41 - HomePageHelper: waitUntilPageIsLoaded method was finished
+2019-07-07 11:08:38 INFO  LogLog4j:15 - 
+2019-07-07 11:08:38 INFO  LogLog4j:16 - 
+2019-07-07 11:08:38 INFO  LogLog4j:17 - *******************************************************************
+2019-07-07 11:08:38 INFO  LogLog4j:18 -                    Test Case: singleFilterByHolidaysEventsInWindow
+2019-07-07 11:08:38 INFO  LogLog4j:19 - *******************************************************************
+2019-07-07 11:08:38 INFO  LogLog4j:41 - PARAMETER: Other
+2019-07-07 11:08:38 INFO  LogLog4j:41 - ---HomePageHelper:chooseFilterHoliday method was started, value =Other
+2019-07-07 11:08:38 INFO  LogLog4j:41 - Select filter by HolidayOther
+2019-07-07 11:08:38 INFO  LogLog4j:41 - ---HomePageHelper:waitEventsListReloaded method was started
+2019-07-07 11:08:38 INFO  LogLog4j:41 - Try to wait until all events are loaded
+2019-07-07 11:08:38 INFO  LogLog4j:41 - On error try to wait 1000ms
+2019-07-07 11:08:39 INFO  LogLog4j:41 - Try to exec waitUntilAllElementsVisible(listEvents,40)
+2019-07-07 11:08:39 INFO  LogLog4j:41 - ---HomePageHelper:isEventsHolidayInWindow method was started, value = Other
+2019-07-07 11:08:39 INFO  LogLog4j:41 - Before the circle of searching elements in events list, counter = 0
+2019-07-07 11:08:39 INFO  LogLog4j:41 - ---HomePageHelper:getHolidayFromEventInWindow method was started
+2019-07-07 11:08:39 INFO  LogLog4j:41 - Get handle of the current window, mainHandle = CDwindow-5E3CAEE302D491D116745D5F1C80B3A8
+2019-07-07 11:08:39 INFO  LogLog4j:41 - Click on the link 'View More'
+2019-07-07 11:08:40 INFO  LogLog4j:41 - Wait until number of windows will be 2, call method waitUntilNumberOfWindowsToBe()
+2019-07-07 11:08:40 INFO  LogLog4j:41 - Switch to the new opened window, call method 'getAnotherHandle()'
+2019-07-07 11:08:40 INFO  LogLog4j:41 - Initiate ViewEventPageHelper.class
+2019-07-07 11:08:40 INFO  LogLog4j:41 - ---ViewPageHelper:waitUntilPageIsLoaded method was started
+2019-07-07 11:08:41 INFO  LogLog4j:41 - ---ViewPageHelper:getHolidayBanner method was started
+2019-07-07 11:08:41 INFO  LogLog4j:41 - Get hoiday value from opened window, holidayBanner = Holiday: Other
+2019-07-07 11:08:41 INFO  LogLog4j:41 - Close the current window
+2019-07-07 11:08:41 INFO  LogLog4j:41 - Switch to main window
+2019-07-07 11:08:42 INFO  LogLog4j:41 - ---HomePageHelper:getHolidayFromEventInWindow method was started
+2019-07-07 11:08:42 INFO  LogLog4j:41 - Get handle of the current window, mainHandle = CDwindow-5E3CAEE302D491D116745D5F1C80B3A8
+2019-07-07 11:08:42 INFO  LogLog4j:41 - Click on the link 'View More'
+2019-07-07 11:08:42 INFO  LogLog4j:41 - Wait until number of windows will be 2, call method waitUntilNumberOfWindowsToBe()
+2019-07-07 11:08:42 INFO  LogLog4j:41 - Switch to the new opened window, call method 'getAnotherHandle()'
+2019-07-07 11:08:42 INFO  LogLog4j:41 - Initiate ViewEventPageHelper.class
+2019-07-07 11:08:42 INFO  LogLog4j:41 - ---ViewPageHelper:waitUntilPageIsLoaded method was started
+2019-07-07 11:08:44 INFO  LogLog4j:41 - ---ViewPageHelper:getHolidayBanner method was started
+2019-07-07 11:08:44 INFO  LogLog4j:41 - Get hoiday value from opened window, holidayBanner = Holiday: Other
+2019-07-07 11:08:44 INFO  LogLog4j:41 - Close the current window
+2019-07-07 11:08:44 INFO  LogLog4j:41 - Switch to main window
+2019-07-07 11:08:44 INFO  LogLog4j:41 - ---HomePageHelper:getHolidayFromEventInWindow method was started
+2019-07-07 11:08:44 INFO  LogLog4j:41 - Get handle of the current window, mainHandle = CDwindow-5E3CAEE302D491D116745D5F1C80B3A8
+2019-07-07 11:08:44 INFO  LogLog4j:41 - Click on the link 'View More'
+2019-07-07 11:08:44 INFO  LogLog4j:41 - Wait until number of windows will be 2, call method waitUntilNumberOfWindowsToBe()
+2019-07-07 11:08:44 INFO  LogLog4j:41 - Switch to the new opened window, call method 'getAnotherHandle()'
+2019-07-07 11:08:44 INFO  LogLog4j:41 - Initiate ViewEventPageHelper.class
+2019-07-07 11:08:44 INFO  LogLog4j:41 - ---ViewPageHelper:waitUntilPageIsLoaded method was started
+2019-07-07 11:08:46 INFO  LogLog4j:41 - ---ViewPageHelper:getHolidayBanner method was started
+2019-07-07 11:08:46 INFO  LogLog4j:41 - Get hoiday value from opened window, holidayBanner = Holiday: Other
+2019-07-07 11:08:46 INFO  LogLog4j:41 - Close the current window
+2019-07-07 11:08:46 INFO  LogLog4j:41 - Switch to main window
+2019-07-07 11:08:46 INFO  LogLog4j:41 - After the circle of searching  elements in events list, counter = 3
+2019-07-07 11:08:46 INFO  LogLog4j:28 - ***********************************************
+2019-07-07 11:08:46 INFO  LogLog4j:29 - ***************             -E---N---D-
+2019-07-07 11:08:46 INFO  LogLog4j:30 - ***********************************************
+2019-07-07 11:08:46 INFO  LogLog4j:31 - 
+2019-07-07 11:08:46 INFO  LogLog4j:32 - 
+2019-07-07 11:08:52 INFO  LogLog4j:41 - ---HomePageHelper: waitUntilPageIsLoaded method was started
+2019-07-07 11:08:52 INFO  LogLog4j:41 - Wait Until Login icon element is clickable 
+2019-07-07 11:08:53 INFO  LogLog4j:41 - Wait Until all events are visible 
+2019-07-07 11:08:54 INFO  LogLog4j:41 - HomePageHelper: waitUntilPageIsLoaded method was finished
+2019-07-07 11:08:54 INFO  LogLog4j:15 - 
+2019-07-07 11:08:54 INFO  LogLog4j:16 - 
+2019-07-07 11:08:54 INFO  LogLog4j:17 - *******************************************************************
+2019-07-07 11:08:54 INFO  LogLog4j:18 -                    Test Case: singleFilterByHolidaysEventsInWindow
+2019-07-07 11:08:54 INFO  LogLog4j:19 - *******************************************************************
+2019-07-07 11:08:54 INFO  LogLog4j:41 - PARAMETER: Shabbat
+2019-07-07 11:08:54 INFO  LogLog4j:41 - ---HomePageHelper:chooseFilterHoliday method was started, value =Shabbat
+2019-07-07 11:08:54 INFO  LogLog4j:41 - Select filter by HolidayShabbat
+2019-07-07 11:08:54 INFO  LogLog4j:41 - ---HomePageHelper:waitEventsListReloaded method was started
+2019-07-07 11:08:54 INFO  LogLog4j:41 - Try to wait until all events are loaded
+2019-07-07 11:08:54 INFO  LogLog4j:41 - On error try to wait 1000ms
+2019-07-07 11:08:55 INFO  LogLog4j:41 - Try to exec waitUntilAllElementsVisible(listEvents,40)
+2019-07-07 11:08:55 INFO  LogLog4j:41 - ---HomePageHelper:isEventsHolidayInWindow method was started, value = Shabbat
+2019-07-07 11:08:55 INFO  LogLog4j:41 - Before the circle of searching elements in events list, counter = 0
+2019-07-07 11:08:55 INFO  LogLog4j:41 - ---HomePageHelper:getHolidayFromEventInWindow method was started
+2019-07-07 11:08:55 INFO  LogLog4j:41 - Get handle of the current window, mainHandle = CDwindow-B6A11D66E7C3D60FABBC4CA3AA0A4E2B
+2019-07-07 11:08:55 INFO  LogLog4j:41 - Click on the link 'View More'
+2019-07-07 11:08:56 INFO  LogLog4j:41 - Wait until number of windows will be 2, call method waitUntilNumberOfWindowsToBe()
+2019-07-07 11:08:56 INFO  LogLog4j:41 - Switch to the new opened window, call method 'getAnotherHandle()'
+2019-07-07 11:08:56 INFO  LogLog4j:41 - Initiate ViewEventPageHelper.class
+2019-07-07 11:08:56 INFO  LogLog4j:41 - ---ViewPageHelper:waitUntilPageIsLoaded method was started
+2019-07-07 11:08:57 INFO  LogLog4j:41 - ---ViewPageHelper:getHolidayBanner method was started
+2019-07-07 11:08:57 INFO  LogLog4j:41 - Get hoiday value from opened window, holidayBanner = Holiday: Shabbat
+2019-07-07 11:08:57 INFO  LogLog4j:41 - Close the current window
+2019-07-07 11:08:57 INFO  LogLog4j:41 - Switch to main window
+2019-07-07 11:08:57 INFO  LogLog4j:41 - ---HomePageHelper:getHolidayFromEventInWindow method was started
+2019-07-07 11:08:57 INFO  LogLog4j:41 - Get handle of the current window, mainHandle = CDwindow-B6A11D66E7C3D60FABBC4CA3AA0A4E2B
+2019-07-07 11:08:57 INFO  LogLog4j:41 - Click on the link 'View More'
+2019-07-07 11:08:58 INFO  LogLog4j:41 - Wait until number of windows will be 2, call method waitUntilNumberOfWindowsToBe()
+2019-07-07 11:08:58 INFO  LogLog4j:41 - Switch to the new opened window, call method 'getAnotherHandle()'
+2019-07-07 11:08:58 INFO  LogLog4j:41 - Initiate ViewEventPageHelper.class
+2019-07-07 11:08:58 INFO  LogLog4j:41 - ---ViewPageHelper:waitUntilPageIsLoaded method was started
+2019-07-07 11:08:59 INFO  LogLog4j:41 - ---ViewPageHelper:getHolidayBanner method was started
+2019-07-07 11:09:00 INFO  LogLog4j:41 - Get hoiday value from opened window, holidayBanner = Holiday: Shabbat
+2019-07-07 11:09:00 INFO  LogLog4j:41 - Close the current window
+2019-07-07 11:09:00 INFO  LogLog4j:41 - Switch to main window
+2019-07-07 11:09:00 INFO  LogLog4j:41 - ---HomePageHelper:getHolidayFromEventInWindow method was started
+2019-07-07 11:09:00 INFO  LogLog4j:41 - Get handle of the current window, mainHandle = CDwindow-B6A11D66E7C3D60FABBC4CA3AA0A4E2B
+2019-07-07 11:09:00 INFO  LogLog4j:41 - Click on the link 'View More'
+2019-07-07 11:09:00 INFO  LogLog4j:41 - Wait until number of windows will be 2, call method waitUntilNumberOfWindowsToBe()
+2019-07-07 11:09:00 INFO  LogLog4j:41 - Switch to the new opened window, call method 'getAnotherHandle()'
+2019-07-07 11:09:00 INFO  LogLog4j:41 - Initiate ViewEventPageHelper.class
+2019-07-07 11:09:00 INFO  LogLog4j:41 - ---ViewPageHelper:waitUntilPageIsLoaded method was started
+2019-07-07 11:09:02 INFO  LogLog4j:41 - ---ViewPageHelper:getHolidayBanner method was started
+2019-07-07 11:09:02 INFO  LogLog4j:41 - Get hoiday value from opened window, holidayBanner = Holiday: Shabbat
+2019-07-07 11:09:02 INFO  LogLog4j:41 - Close the current window
+2019-07-07 11:09:02 INFO  LogLog4j:41 - Switch to main window
+2019-07-07 11:09:02 INFO  LogLog4j:41 - ---HomePageHelper:getHolidayFromEventInWindow method was started
+2019-07-07 11:09:02 INFO  LogLog4j:41 - Get handle of the current window, mainHandle = CDwindow-B6A11D66E7C3D60FABBC4CA3AA0A4E2B
+2019-07-07 11:09:02 INFO  LogLog4j:41 - Click on the link 'View More'
+2019-07-07 11:09:02 INFO  LogLog4j:41 - Wait until number of windows will be 2, call method waitUntilNumberOfWindowsToBe()
+2019-07-07 11:09:02 INFO  LogLog4j:41 - Switch to the new opened window, call method 'getAnotherHandle()'
+2019-07-07 11:09:02 INFO  LogLog4j:41 - Initiate ViewEventPageHelper.class
+2019-07-07 11:09:02 INFO  LogLog4j:41 - ---ViewPageHelper:waitUntilPageIsLoaded method was started
+2019-07-07 11:09:04 INFO  LogLog4j:41 - ---ViewPageHelper:getHolidayBanner method was started
+2019-07-07 11:09:04 INFO  LogLog4j:41 - Get hoiday value from opened window, holidayBanner = Holiday: Shabbat
+2019-07-07 11:09:04 INFO  LogLog4j:41 - Close the current window
+2019-07-07 11:09:04 INFO  LogLog4j:41 - Switch to main window
+2019-07-07 11:09:04 INFO  LogLog4j:41 - After the circle of searching  elements in events list, counter = 4
+2019-07-07 11:09:04 INFO  LogLog4j:28 - ***********************************************
+2019-07-07 11:09:04 INFO  LogLog4j:29 - ***************             -E---N---D-
+2019-07-07 11:09:04 INFO  LogLog4j:30 - ***********************************************
+2019-07-07 11:09:04 INFO  LogLog4j:31 - 
+2019-07-07 11:09:04 INFO  LogLog4j:32 - 
+2019-07-07 11:09:10 INFO  LogLog4j:41 - ---HomePageHelper: waitUntilPageIsLoaded method was started
+2019-07-07 11:09:10 INFO  LogLog4j:41 - Wait Until Login icon element is clickable 
+2019-07-07 11:09:11 INFO  LogLog4j:41 - Wait Until all events are visible 
+2019-07-07 11:09:12 INFO  LogLog4j:41 - HomePageHelper: waitUntilPageIsLoaded method was finished
+2019-07-07 11:09:12 INFO  LogLog4j:15 - 
+2019-07-07 11:09:12 INFO  LogLog4j:16 - 
+2019-07-07 11:09:12 INFO  LogLog4j:17 - *******************************************************************
+2019-07-07 11:09:12 INFO  LogLog4j:18 -                    Test Case: singleFilterByHolidaysEventsInWindow
+2019-07-07 11:09:12 INFO  LogLog4j:19 - *******************************************************************
+2019-07-07 11:09:12 INFO  LogLog4j:41 - PARAMETER: Purim
+2019-07-07 11:09:12 INFO  LogLog4j:41 - ---HomePageHelper:chooseFilterHoliday method was started, value =Purim
+2019-07-07 11:09:12 INFO  LogLog4j:41 - Select filter by HolidayPurim
+2019-07-07 11:09:12 INFO  LogLog4j:41 - ---HomePageHelper:waitEventsListReloaded method was started
+2019-07-07 11:09:12 INFO  LogLog4j:41 - Try to wait until all events are loaded
+2019-07-07 11:09:12 INFO  LogLog4j:41 - On error try to wait 1000ms
+2019-07-07 11:09:13 INFO  LogLog4j:41 - Try to exec waitUntilAllElementsVisible(listEvents,40)
+2019-07-07 11:09:13 INFO  LogLog4j:41 - ---HomePageHelper:isEventsHolidayInWindow method was started, value = Purim
+2019-07-07 11:09:13 INFO  LogLog4j:41 - Before the circle of searching elements in events list, counter = 0
+2019-07-07 11:09:13 INFO  LogLog4j:41 - ---HomePageHelper:getHolidayFromEventInWindow method was started
+2019-07-07 11:09:13 INFO  LogLog4j:41 - Get handle of the current window, mainHandle = CDwindow-C967344B558914DBCF4047BE0C00C166
+2019-07-07 11:09:13 INFO  LogLog4j:41 - Click on the link 'View More'
+2019-07-07 11:09:14 INFO  LogLog4j:41 - Wait until number of windows will be 2, call method waitUntilNumberOfWindowsToBe()
+2019-07-07 11:09:14 INFO  LogLog4j:41 - Switch to the new opened window, call method 'getAnotherHandle()'
+2019-07-07 11:09:14 INFO  LogLog4j:41 - Initiate ViewEventPageHelper.class
+2019-07-07 11:09:14 INFO  LogLog4j:41 - ---ViewPageHelper:waitUntilPageIsLoaded method was started
+2019-07-07 11:09:15 INFO  LogLog4j:41 - ---ViewPageHelper:getHolidayBanner method was started
+2019-07-07 11:09:15 INFO  LogLog4j:41 - Get hoiday value from opened window, holidayBanner = Holiday: Purim
+2019-07-07 11:09:15 INFO  LogLog4j:41 - Close the current window
+2019-07-07 11:09:15 INFO  LogLog4j:41 - Switch to main window
+2019-07-07 11:09:15 INFO  LogLog4j:41 - ---HomePageHelper:getHolidayFromEventInWindow method was started
+2019-07-07 11:09:16 INFO  LogLog4j:41 - Get handle of the current window, mainHandle = CDwindow-C967344B558914DBCF4047BE0C00C166
+2019-07-07 11:09:16 INFO  LogLog4j:41 - Click on the link 'View More'
+2019-07-07 11:09:16 INFO  LogLog4j:41 - Wait until number of windows will be 2, call method waitUntilNumberOfWindowsToBe()
+2019-07-07 11:09:16 INFO  LogLog4j:41 - Switch to the new opened window, call method 'getAnotherHandle()'
+2019-07-07 11:09:16 INFO  LogLog4j:41 - Initiate ViewEventPageHelper.class
+2019-07-07 11:09:16 INFO  LogLog4j:41 - ---ViewPageHelper:waitUntilPageIsLoaded method was started
+2019-07-07 11:09:18 INFO  LogLog4j:41 - ---ViewPageHelper:getHolidayBanner method was started
+2019-07-07 11:09:18 INFO  LogLog4j:41 - Get hoiday value from opened window, holidayBanner = Holiday: Purim
+2019-07-07 11:09:18 INFO  LogLog4j:41 - Close the current window
+2019-07-07 11:09:18 INFO  LogLog4j:41 - Switch to main window
+2019-07-07 11:09:18 INFO  LogLog4j:41 - After the circle of searching  elements in events list, counter = 2
+2019-07-07 11:09:18 INFO  LogLog4j:28 - ***********************************************
+2019-07-07 11:09:18 INFO  LogLog4j:29 - ***************             -E---N---D-
+2019-07-07 11:09:18 INFO  LogLog4j:30 - ***********************************************
+2019-07-07 11:09:18 INFO  LogLog4j:31 - 
+2019-07-07 11:09:18 INFO  LogLog4j:32 - 
+2019-07-07 11:09:24 INFO  LogLog4j:41 - ---HomePageHelper: waitUntilPageIsLoaded method was started
+2019-07-07 11:09:24 INFO  LogLog4j:41 - Wait Until Login icon element is clickable 
+2019-07-07 11:09:25 INFO  LogLog4j:41 - Wait Until all events are visible 
+2019-07-07 11:09:26 INFO  LogLog4j:41 - HomePageHelper: waitUntilPageIsLoaded method was finished
+2019-07-07 11:09:26 INFO  LogLog4j:15 - 
+2019-07-07 11:09:26 INFO  LogLog4j:16 - 
+2019-07-07 11:09:26 INFO  LogLog4j:17 - *******************************************************************
+2019-07-07 11:09:26 INFO  LogLog4j:18 -                    Test Case: singleFilterByHolidaysEventsInWindow
+2019-07-07 11:09:26 INFO  LogLog4j:19 - *******************************************************************
+2019-07-07 11:09:26 INFO  LogLog4j:41 - PARAMETER: Pesach
+2019-07-07 11:09:26 INFO  LogLog4j:41 - ---HomePageHelper:chooseFilterHoliday method was started, value =Pesach
+2019-07-07 11:09:26 INFO  LogLog4j:41 - Select filter by HolidayPesach
+2019-07-07 11:09:26 INFO  LogLog4j:41 - ---HomePageHelper:waitEventsListReloaded method was started
+2019-07-07 11:09:26 INFO  LogLog4j:41 - Try to wait until all events are loaded
+2019-07-07 11:09:26 INFO  LogLog4j:41 - On error try to wait 1000ms
+2019-07-07 11:09:27 INFO  LogLog4j:41 - Try to exec waitUntilAllElementsVisible(listEvents,40)
+2019-07-07 11:09:27 INFO  LogLog4j:41 - ---HomePageHelper:isEventsHolidayInWindow method was started, value = Pesach
+2019-07-07 11:09:27 INFO  LogLog4j:41 - Before the circle of searching elements in events list, counter = 0
+2019-07-07 11:09:27 INFO  LogLog4j:41 - ---HomePageHelper:getHolidayFromEventInWindow method was started
+2019-07-07 11:09:27 INFO  LogLog4j:41 - Get handle of the current window, mainHandle = CDwindow-E3DB9D58FDD821173CD764D1F960E3DA
+2019-07-07 11:09:27 INFO  LogLog4j:41 - Click on the link 'View More'
+2019-07-07 11:09:27 INFO  LogLog4j:41 - Wait until number of windows will be 2, call method waitUntilNumberOfWindowsToBe()
+2019-07-07 11:09:28 INFO  LogLog4j:41 - Switch to the new opened window, call method 'getAnotherHandle()'
+2019-07-07 11:09:28 INFO  LogLog4j:41 - Initiate ViewEventPageHelper.class
+2019-07-07 11:09:28 INFO  LogLog4j:41 - ---ViewPageHelper:waitUntilPageIsLoaded method was started
+2019-07-07 11:09:29 INFO  LogLog4j:41 - ---ViewPageHelper:getHolidayBanner method was started
+2019-07-07 11:09:29 INFO  LogLog4j:41 - Get hoiday value from opened window, holidayBanner = Holiday: Pesach
+2019-07-07 11:09:29 INFO  LogLog4j:41 - Close the current window
+2019-07-07 11:09:29 INFO  LogLog4j:41 - Switch to main window
+2019-07-07 11:09:29 INFO  LogLog4j:41 - After the circle of searching  elements in events list, counter = 1
+2019-07-07 11:09:30 INFO  LogLog4j:28 - ***********************************************
+2019-07-07 11:09:30 INFO  LogLog4j:29 - ***************             -E---N---D-
+2019-07-07 11:09:30 INFO  LogLog4j:30 - ***********************************************
+2019-07-07 11:09:30 INFO  LogLog4j:31 - 
+2019-07-07 11:09:30 INFO  LogLog4j:32 - 
+2019-07-07 11:09:36 INFO  LogLog4j:41 - ---HomePageHelper: waitUntilPageIsLoaded method was started
+2019-07-07 11:09:36 INFO  LogLog4j:41 - Wait Until Login icon element is clickable 
+2019-07-07 11:09:36 INFO  LogLog4j:41 - Wait Until all events are visible 
+2019-07-07 11:09:37 INFO  LogLog4j:41 - HomePageHelper: waitUntilPageIsLoaded method was finished
+2019-07-07 11:09:37 INFO  LogLog4j:15 - 
+2019-07-07 11:09:37 INFO  LogLog4j:16 - 
+2019-07-07 11:09:37 INFO  LogLog4j:17 - *******************************************************************
+2019-07-07 11:09:37 INFO  LogLog4j:18 -                    Test Case: singleFilterByHolidaysEventsInWindow
+2019-07-07 11:09:37 INFO  LogLog4j:19 - *******************************************************************
+2019-07-07 11:09:37 INFO  LogLog4j:41 - PARAMETER: Circumcision
+2019-07-07 11:09:37 INFO  LogLog4j:41 - ---HomePageHelper:chooseFilterHoliday method was started, value =Circumcision
+2019-07-07 11:09:37 INFO  LogLog4j:41 - Select filter by HolidayCircumcision
+2019-07-07 11:09:37 INFO  LogLog4j:41 - ---HomePageHelper:waitEventsListReloaded method was started
+2019-07-07 11:09:37 INFO  LogLog4j:41 - Try to wait until all events are loaded
+2019-07-07 11:09:37 INFO  LogLog4j:41 - On error try to wait 1000ms
+2019-07-07 11:09:38 INFO  LogLog4j:41 - Try to exec waitUntilAllElementsVisible(listEvents,40)
+2019-07-07 11:09:38 INFO  LogLog4j:41 - ---HomePageHelper:isEventsHolidayInWindow method was started, value = Circumcision
+2019-07-07 11:09:38 INFO  LogLog4j:41 - Before the circle of searching elements in events list, counter = 0
+2019-07-07 11:09:38 INFO  LogLog4j:41 - ---HomePageHelper:getHolidayFromEventInWindow method was started
+2019-07-07 11:09:38 INFO  LogLog4j:41 - Get handle of the current window, mainHandle = CDwindow-C36081611F6EA700FDB92D933C58AF00
+2019-07-07 11:09:38 INFO  LogLog4j:41 - Click on the link 'View More'
+2019-07-07 11:09:39 INFO  LogLog4j:41 - Wait until number of windows will be 2, call method waitUntilNumberOfWindowsToBe()
+2019-07-07 11:09:39 INFO  LogLog4j:41 - Switch to the new opened window, call method 'getAnotherHandle()'
+2019-07-07 11:09:39 INFO  LogLog4j:41 - Initiate ViewEventPageHelper.class
+2019-07-07 11:09:39 INFO  LogLog4j:41 - ---ViewPageHelper:waitUntilPageIsLoaded method was started
+2019-07-07 11:09:40 INFO  LogLog4j:41 - ---ViewPageHelper:getHolidayBanner method was started
+2019-07-07 11:09:40 INFO  LogLog4j:41 - Get hoiday value from opened window, holidayBanner = Holiday: Circumcision
+2019-07-07 11:09:40 INFO  LogLog4j:41 - Close the current window
+2019-07-07 11:09:40 INFO  LogLog4j:41 - Switch to main window
+2019-07-07 11:09:40 INFO  LogLog4j:41 - ---HomePageHelper:getHolidayFromEventInWindow method was started
+2019-07-07 11:09:40 INFO  LogLog4j:41 - Get handle of the current window, mainHandle = CDwindow-C36081611F6EA700FDB92D933C58AF00
+2019-07-07 11:09:40 INFO  LogLog4j:41 - Click on the link 'View More'
+2019-07-07 11:09:41 INFO  LogLog4j:41 - Wait until number of windows will be 2, call method waitUntilNumberOfWindowsToBe()
+2019-07-07 11:09:41 INFO  LogLog4j:41 - Switch to the new opened window, call method 'getAnotherHandle()'
+2019-07-07 11:09:41 INFO  LogLog4j:41 - Initiate ViewEventPageHelper.class
+2019-07-07 11:09:41 INFO  LogLog4j:41 - ---ViewPageHelper:waitUntilPageIsLoaded method was started
+2019-07-07 11:09:42 INFO  LogLog4j:41 - ---ViewPageHelper:getHolidayBanner method was started
+2019-07-07 11:09:42 INFO  LogLog4j:41 - Get hoiday value from opened window, holidayBanner = Holiday: Circumcision
+2019-07-07 11:09:42 INFO  LogLog4j:41 - Close the current window
+2019-07-07 11:09:43 INFO  LogLog4j:41 - Switch to main window
+2019-07-07 11:09:43 INFO  LogLog4j:41 - After the circle of searching  elements in events list, counter = 2
+2019-07-07 11:09:43 INFO  LogLog4j:28 - ***********************************************
+2019-07-07 11:09:43 INFO  LogLog4j:29 - ***************             -E---N---D-
+2019-07-07 11:09:43 INFO  LogLog4j:30 - ***********************************************
+2019-07-07 11:09:43 INFO  LogLog4j:31 - 
+2019-07-07 11:09:43 INFO  LogLog4j:32 - 
+2019-07-07 11:09:49 INFO  LogLog4j:41 - ---HomePageHelper: waitUntilPageIsLoaded method was started
+2019-07-07 11:09:49 INFO  LogLog4j:41 - Wait Until Login icon element is clickable 
+2019-07-07 11:09:49 INFO  LogLog4j:41 - Wait Until all events are visible 
+2019-07-07 11:09:50 INFO  LogLog4j:41 - HomePageHelper: waitUntilPageIsLoaded method was finished
+2019-07-07 11:09:50 INFO  LogLog4j:15 - 
+2019-07-07 11:09:50 INFO  LogLog4j:16 - 
+2019-07-07 11:09:50 INFO  LogLog4j:17 - *******************************************************************
+2019-07-07 11:09:50 INFO  LogLog4j:18 -                    Test Case: singleFilterByHolidaysEventsInWindow
+2019-07-07 11:09:50 INFO  LogLog4j:19 - *******************************************************************
+2019-07-07 11:09:50 INFO  LogLog4j:41 - PARAMETER: Bar Mitzvah
+2019-07-07 11:09:50 INFO  LogLog4j:41 - ---HomePageHelper:chooseFilterHoliday method was started, value =Bar Mitzvah
+2019-07-07 11:09:50 INFO  LogLog4j:41 - Select filter by HolidayBar Mitzvah
+2019-07-07 11:09:51 INFO  LogLog4j:41 - ---HomePageHelper:waitEventsListReloaded method was started
+2019-07-07 11:09:51 INFO  LogLog4j:41 - Try to wait until all events are loaded
+2019-07-07 11:09:51 INFO  LogLog4j:41 - On error try to wait 1000ms
+2019-07-07 11:09:52 INFO  LogLog4j:41 - Try to exec waitUntilAllElementsVisible(listEvents,40)
+2019-07-07 11:09:52 INFO  LogLog4j:41 - ---HomePageHelper:isEventsHolidayInWindow method was started, value = Bar Mitzvah
+2019-07-07 11:09:52 INFO  LogLog4j:41 - Before the circle of searching elements in events list, counter = 0
+2019-07-07 11:09:52 INFO  LogLog4j:41 - ---HomePageHelper:getHolidayFromEventInWindow method was started
+2019-07-07 11:09:52 INFO  LogLog4j:41 - Get handle of the current window, mainHandle = CDwindow-157B91F73B2040EFA3D9525DBCA73195
+2019-07-07 11:09:52 INFO  LogLog4j:41 - Click on the link 'View More'
+2019-07-07 11:09:52 INFO  LogLog4j:41 - Wait until number of windows will be 2, call method waitUntilNumberOfWindowsToBe()
+2019-07-07 11:09:52 INFO  LogLog4j:41 - Switch to the new opened window, call method 'getAnotherHandle()'
+2019-07-07 11:09:52 INFO  LogLog4j:41 - Initiate ViewEventPageHelper.class
+2019-07-07 11:09:52 INFO  LogLog4j:41 - ---ViewPageHelper:waitUntilPageIsLoaded method was started
+2019-07-07 11:09:54 INFO  LogLog4j:41 - ---ViewPageHelper:getHolidayBanner method was started
+2019-07-07 11:09:54 INFO  LogLog4j:41 - Get hoiday value from opened window, holidayBanner = Holiday: Bar Mitzvah
+2019-07-07 11:09:54 INFO  LogLog4j:41 - Close the current window
+2019-07-07 11:09:54 INFO  LogLog4j:41 - Switch to main window
+2019-07-07 11:09:54 INFO  LogLog4j:41 - After the circle of searching  elements in events list, counter = 1
+2019-07-07 11:09:54 INFO  LogLog4j:28 - ***********************************************
+2019-07-07 11:09:54 INFO  LogLog4j:29 - ***************             -E---N---D-
+2019-07-07 11:09:54 INFO  LogLog4j:30 - ***********************************************
+2019-07-07 11:09:54 INFO  LogLog4j:31 - 
+2019-07-07 11:09:54 INFO  LogLog4j:32 - 
+2019-07-07 11:10:01 INFO  LogLog4j:41 - ---HomePageHelper: waitUntilPageIsLoaded method was started
+2019-07-07 11:10:01 INFO  LogLog4j:41 - Wait Until Login icon element is clickable 
+2019-07-07 11:10:01 INFO  LogLog4j:41 - Wait Until all events are visible 
+2019-07-07 11:10:02 INFO  LogLog4j:41 - HomePageHelper: waitUntilPageIsLoaded method was finished
+2019-07-07 11:10:02 INFO  LogLog4j:15 - 
+2019-07-07 11:10:02 INFO  LogLog4j:16 - 
+2019-07-07 11:10:02 INFO  LogLog4j:17 - *******************************************************************
+2019-07-07 11:10:02 INFO  LogLog4j:18 -                    Test Case: singleFilterByHolidaysEventsInWindow
+2019-07-07 11:10:02 INFO  LogLog4j:19 - *******************************************************************
+2019-07-07 11:10:02 INFO  LogLog4j:41 - PARAMETER: Bat Mitzvah
+2019-07-07 11:10:02 INFO  LogLog4j:41 - ---HomePageHelper:chooseFilterHoliday method was started, value =Bat Mitzvah
+2019-07-07 11:10:02 INFO  LogLog4j:41 - Select filter by HolidayBat Mitzvah
+2019-07-07 11:10:03 INFO  LogLog4j:41 - ---HomePageHelper:waitEventsListReloaded method was started
+2019-07-07 11:10:03 INFO  LogLog4j:41 - Try to wait until all events are loaded
+2019-07-07 11:10:03 INFO  LogLog4j:41 - On error try to wait 1000ms
+2019-07-07 11:10:04 INFO  LogLog4j:41 - Try to exec waitUntilAllElementsVisible(listEvents,40)
+2019-07-07 11:10:04 INFO  LogLog4j:41 - ---HomePageHelper:isEventsHolidayInWindow method was started, value = Bat Mitzvah
+2019-07-07 11:10:04 INFO  LogLog4j:41 - Before the circle of searching elements in events list, counter = 0
+2019-07-07 11:10:04 INFO  LogLog4j:41 - ---HomePageHelper:getHolidayFromEventInWindow method was started
+2019-07-07 11:10:04 INFO  LogLog4j:41 - Get handle of the current window, mainHandle = CDwindow-72119AB54BB5393384206B14621D66E1
+2019-07-07 11:10:04 INFO  LogLog4j:41 - Click on the link 'View More'
+2019-07-07 11:10:04 INFO  LogLog4j:41 - Wait until number of windows will be 2, call method waitUntilNumberOfWindowsToBe()
+2019-07-07 11:10:04 INFO  LogLog4j:41 - Switch to the new opened window, call method 'getAnotherHandle()'
+2019-07-07 11:10:04 INFO  LogLog4j:41 - Initiate ViewEventPageHelper.class
+2019-07-07 11:10:04 INFO  LogLog4j:41 - ---ViewPageHelper:waitUntilPageIsLoaded method was started
+2019-07-07 11:10:06 INFO  LogLog4j:41 - ---ViewPageHelper:getHolidayBanner method was started
+2019-07-07 11:10:06 INFO  LogLog4j:41 - Get hoiday value from opened window, holidayBanner = Holiday: Bat Mitzvah
+2019-07-07 11:10:06 INFO  LogLog4j:41 - Close the current window
+2019-07-07 11:10:06 INFO  LogLog4j:41 - Switch to main window
+2019-07-07 11:10:06 INFO  LogLog4j:41 - After the circle of searching  elements in events list, counter = 1
+2019-07-07 11:10:06 INFO  LogLog4j:28 - ***********************************************
+2019-07-07 11:10:06 INFO  LogLog4j:29 - ***************             -E---N---D-
+2019-07-07 11:10:06 INFO  LogLog4j:30 - ***********************************************
+2019-07-07 11:10:06 INFO  LogLog4j:31 - 
+2019-07-07 11:10:06 INFO  LogLog4j:32 - 
+2019-07-07 11:10:13 INFO  LogLog4j:41 - ---HomePageHelper: waitUntilPageIsLoaded method was started
+2019-07-07 11:10:13 INFO  LogLog4j:41 - Wait Until Login icon element is clickable 
+2019-07-07 11:10:13 INFO  LogLog4j:41 - Wait Until all events are visible 
+2019-07-07 11:10:14 INFO  LogLog4j:41 - HomePageHelper: waitUntilPageIsLoaded method was finished
+2019-07-07 11:10:14 INFO  LogLog4j:15 - 
+2019-07-07 11:10:14 INFO  LogLog4j:16 - 
+2019-07-07 11:10:14 INFO  LogLog4j:17 - *******************************************************************
+2019-07-07 11:10:14 INFO  LogLog4j:18 -                    Test Case: singleFilterByHolidaysEventsInWindow
+2019-07-07 11:10:14 INFO  LogLog4j:19 - *******************************************************************
+2019-07-07 11:10:14 INFO  LogLog4j:41 - PARAMETER: Wedding
+2019-07-07 11:10:14 INFO  LogLog4j:41 - ---HomePageHelper:chooseFilterHoliday method was started, value =Wedding
+2019-07-07 11:10:14 INFO  LogLog4j:41 - Select filter by HolidayWedding
+2019-07-07 11:10:14 INFO  LogLog4j:41 - ---HomePageHelper:waitEventsListReloaded method was started
+2019-07-07 11:10:14 INFO  LogLog4j:41 - Try to wait until all events are loaded
+2019-07-07 11:10:14 INFO  LogLog4j:41 - On error try to wait 1000ms
+2019-07-07 11:10:15 INFO  LogLog4j:41 - Try to exec waitUntilAllElementsVisible(listEvents,40)
+2019-07-07 11:10:15 INFO  LogLog4j:41 - ---HomePageHelper:isEventsHolidayInWindow method was started, value = Wedding
+2019-07-07 11:10:15 INFO  LogLog4j:41 - Before the circle of searching elements in events list, counter = 0
+2019-07-07 11:10:15 INFO  LogLog4j:41 - ---HomePageHelper:getHolidayFromEventInWindow method was started
+2019-07-07 11:10:15 INFO  LogLog4j:41 - Get handle of the current window, mainHandle = CDwindow-54EB376C0D7F13FF446CC15645A58123
+2019-07-07 11:10:15 INFO  LogLog4j:41 - Click on the link 'View More'
+2019-07-07 11:10:15 INFO  LogLog4j:41 - Wait until number of windows will be 2, call method waitUntilNumberOfWindowsToBe()
+2019-07-07 11:10:15 INFO  LogLog4j:41 - Switch to the new opened window, call method 'getAnotherHandle()'
+2019-07-07 11:10:16 INFO  LogLog4j:41 - Initiate ViewEventPageHelper.class
+2019-07-07 11:10:16 INFO  LogLog4j:41 - ---ViewPageHelper:waitUntilPageIsLoaded method was started
+2019-07-07 11:10:17 INFO  LogLog4j:41 - ---ViewPageHelper:getHolidayBanner method was started
+2019-07-07 11:10:17 INFO  LogLog4j:41 - Get hoiday value from opened window, holidayBanner = Holiday: Wedding
+2019-07-07 11:10:17 INFO  LogLog4j:41 - Close the current window
+2019-07-07 11:10:17 INFO  LogLog4j:41 - Switch to main window
+2019-07-07 11:10:17 INFO  LogLog4j:41 - After the circle of searching  elements in events list, counter = 1
+2019-07-07 11:10:17 INFO  LogLog4j:28 - ***********************************************
+2019-07-07 11:10:17 INFO  LogLog4j:29 - ***************             -E---N---D-
+2019-07-07 11:10:17 INFO  LogLog4j:30 - ***********************************************
+2019-07-07 11:10:17 INFO  LogLog4j:31 - 
+2019-07-07 11:10:17 INFO  LogLog4j:32 - 

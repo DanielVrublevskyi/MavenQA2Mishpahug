@@ -39,7 +39,8 @@ public class HomePageTests extends TestBase{
 
     @Test (dataProviderClass = DataProviders.class, dataProvider = "singleFilterByHoliday")
     public void singleFilterByHoliday(String holiday){
-        log.startTestCase("singleFilterByHoliday-" + holiday);
+        log.startTestCase("singleFilterByHoliday");
+        log.info("PARAMETER: " + holiday);
         log.info("Choose filter by" + holiday);
         homePage.chooseFilterHoliday(holiday)
                  .waitEventsListReloaded();
@@ -51,6 +52,9 @@ public class HomePageTests extends TestBase{
 
     @Test
     public void doubleFilterByFoodConf(){
+        log.startTestCase("doubleFilterByFoodConf");
+        log.info("FILTER 'FOOD', PARAMETER: " + FILTER_HOLIDAY_FOOD);
+        log.info("FILTER 'CONFESSION',PARAMETER: " + FILTER_HOLIDAY_CONF);
         homePage.chooseFilterFood(FILTER_HOLIDAY_FOOD)
                 .waitEventsListReloaded()
                 .chooseFilterConf(FILTER_HOLIDAY_CONF)
@@ -59,8 +63,9 @@ public class HomePageTests extends TestBase{
                 "Not passed. Not all events contain food value" + FILTER_HOLIDAY_FOOD);
         Assert.assertTrue(homePage.isEventsContainsPreference(FILTER_HOLIDAY_CONF),
                 "Not passed. Not all events contain confession value " + FILTER_HOLIDAY_CONF);
+        log.endTestCase("doubleFilterByFoodConf");
     }
-
+/*
     @Test
     public void singleFilterByHolidaysWithWindows(){
         homePage.chooseFilterHoliday(FILTER_HOLIDAY_SHABBAT)
@@ -93,12 +98,17 @@ public class HomePageTests extends TestBase{
         driver.close();
         driver.switchTo().window(mainHandle);
     }
-    @Test
-    public void singleFilterByHolidaysEventsInWindow(){
-        homePage.chooseFilterHoliday(FILTER_HOLIDAY_SHABBAT)
+    */
+
+    @Test(dataProviderClass = DataProviders.class, dataProvider = "singleFilterByHoliday")
+    public void singleFilterByHolidaysEventsInWindow(String holiday){
+        log.startTestCase("singleFilterByHolidaysEventsInWindow");
+        log.info("PARAMETER: " + holiday);
+        homePage.chooseFilterHoliday(holiday)
                 .waitEventsListReloaded();
-        Assert.assertTrue(homePage.isEventsHolidayInWindow(FILTER_HOLIDAY_SHABBAT),
-                "Not passed. Exists event with another holiday value (not " + FILTER_HOLIDAY_SHABBAT);
+        Assert.assertTrue(homePage.isEventsHolidayInWindow(holiday),
+                "Not passed. Exists event with another holiday value (not " + holiday + ")");
+        log.endTestCase("singleFilterByHolidaysEventsInWindow");
 
     }
 
