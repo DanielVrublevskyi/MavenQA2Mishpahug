@@ -620,3 +620,63 @@
 2019-07-07 11:10:17 INFO  LogLog4j:30 - ***********************************************
 2019-07-07 11:10:17 INFO  LogLog4j:31 - 
 2019-07-07 11:10:17 INFO  LogLog4j:32 - 
+2019-07-07 12:55:29 INFO  LogLog4j:41 - ---HomePageHelper: waitUntilPageIsLoaded method was started
+2019-07-07 12:55:29 INFO  LogLog4j:41 - Wait Until Login icon element is clickable 
+2019-07-07 12:55:29 INFO  LogLog4j:41 - Wait Until all events are visible 
+2019-07-07 12:55:30 INFO  LogLog4j:41 - HomePageHelper: waitUntilPageIsLoaded method was finished
+2019-07-07 12:55:30 INFO  LogLog4j:41 - ---HomePageHelper: openLoginPage method was started
+2019-07-07 12:55:30 INFO  LogLog4j:41 - Click on Login icon
+2019-07-07 12:55:30 INFO  LogLog4j:41 - HomePageHelper: openLoginPage method was finished
+2019-07-07 12:55:30 INFO  LogLog4j:41 - LoginPageHelper: waitUntilPageIsLoaded method was started
+2019-07-07 12:55:30 INFO  LogLog4j:41 - Wait until SignIn button is clickable
+2019-07-07 12:55:30 INFO  LogLog4j:41 - LoginPageHelper: waitUntilPageIsLoaded method was finished
+2019-07-07 12:55:41 INFO  LogLog4j:41 - ---HomePageHelper: waitUntilPageIsLoaded method was started
+2019-07-07 12:55:41 INFO  LogLog4j:41 - Wait Until Login icon element is clickable 
+2019-07-07 12:55:41 INFO  LogLog4j:41 - Wait Until all events are visible 
+2019-07-07 12:55:42 INFO  LogLog4j:41 - HomePageHelper: waitUntilPageIsLoaded method was finished
+2019-07-07 12:55:42 INFO  LogLog4j:41 - ---HomePageHelper: openLoginPage method was started
+2019-07-07 12:55:42 INFO  LogLog4j:41 - Click on Login icon
+2019-07-07 12:55:42 INFO  LogLog4j:41 - HomePageHelper: openLoginPage method was finished
+2019-07-07 12:55:42 INFO  LogLog4j:41 - LoginPageHelper: waitUntilPageIsLoaded method was started
+2019-07-07 12:55:42 INFO  LogLog4j:41 - Wait until SignIn button is clickable
+2019-07-07 12:55:42 INFO  LogLog4j:41 - LoginPageHelper: waitUntilPageIsLoaded method was finished
+2019-07-07 12:55:57 INFO  LogLog4j:41 - ---HomePageHelper: waitUntilPageIsLoaded method was started
+2019-07-07 12:55:57 INFO  LogLog4j:41 - Wait Until Login icon element is clickable 
+2019-07-07 12:55:57 INFO  LogLog4j:41 - Wait Until all events are visible 
+2019-07-07 12:55:58 INFO  LogLog4j:41 - HomePageHelper: waitUntilPageIsLoaded method was finished
+2019-07-07 12:55:58 INFO  LogLog4j:41 - ---HomePageHelper: openLoginPage method was started
+2019-07-07 12:55:58 INFO  LogLog4j:41 - Click on Login icon
+2019-07-07 12:55:58 INFO  LogLog4j:41 - HomePageHelper: openLoginPage method was finished
+2019-07-07 12:55:58 INFO  LogLog4j:41 - LoginPageHelper: waitUntilPageIsLoaded method was started
+2019-07-07 12:55:58 INFO  LogLog4j:41 - Wait until SignIn button is clickable
+2019-07-07 12:55:58 INFO  LogLog4j:41 - LoginPageHelper: waitUntilPageIsLoaded method was finished
+2019-07-07 12:56:11 INFO  LogLog4j:41 - ---HomePageHelper: waitUntilPageIsLoaded method was started
+2019-07-07 12:56:11 INFO  LogLog4j:41 - Wait Until Login icon element is clickable 
+2019-07-07 12:56:12 INFO  LogLog4j:41 - Wait Until all events are visible 
+2019-07-07 12:56:13 INFO  LogLog4j:41 - HomePageHelper: waitUntilPageIsLoaded method was finished
+2019-07-07 12:56:13 INFO  LogLog4j:41 - ---HomePageHelper: openLoginPage method was started
+2019-07-07 12:56:13 INFO  LogLog4j:41 - Click on Login icon
+2019-07-07 12:56:13 INFO  LogLog4j:41 - HomePageHelper: openLoginPage method was finished
+2019-07-07 12:56:13 INFO  LogLog4j:41 - LoginPageHelper: waitUntilPageIsLoaded method was started
+2019-07-07 12:56:13 INFO  LogLog4j:41 - Wait until SignIn button is clickable
+2019-07-07 12:56:13 INFO  LogLog4j:41 - LoginPageHelper: waitUntilPageIsLoaded method was finished
+2019-07-07 12:56:27 INFO  LogLog4j:41 - ---HomePageHelper: waitUntilPageIsLoaded method was started
+2019-07-07 12:56:27 INFO  LogLog4j:41 - Wait Until Login icon element is clickable 
+2019-07-07 12:56:27 INFO  LogLog4j:41 - Wait Until all events are visible 
+2019-07-07 12:56:27 INFO  LogLog4j:41 - HomePageHelper: waitUntilPageIsLoaded method was finished
+2019-07-07 12:56:27 INFO  LogLog4j:41 - ---HomePageHelper: openLoginPage method was started
+2019-07-07 12:56:27 INFO  LogLog4j:41 - Click on Login icon
+2019-07-07 12:56:27 INFO  LogLog4j:41 - HomePageHelper: openLoginPage method was finished
+2019-07-07 12:56:27 INFO  LogLog4j:41 - LoginPageHelper: waitUntilPageIsLoaded method was started
+2019-07-07 12:56:27 INFO  LogLog4j:41 - Wait until SignIn button is clickable
+2019-07-07 12:56:28 INFO  LogLog4j:41 - LoginPageHelper: waitUntilPageIsLoaded method was finished
+2019-07-07 13:05:43 INFO  LogLog4j:41 - ---HomePageHelper: waitUntilPageIsLoaded method was started
+2019-07-07 13:05:43 INFO  LogLog4j:41 - Wait Until Login icon element is clickable 
+2019-07-07 13:05:43 INFO  LogLog4j:41 - Wait Until all events are visible 
+2019-07-07 13:05:44 INFO  LogLog4j:41 - HomePageHelper: waitUntilPageIsLoaded method was finished
+2019-07-07 13:05:44 INFO  LogLog4j:41 - ---HomePageHelper: openLoginPage method was started
+2019-07-07 13:05:44 INFO  LogLog4j:41 - Click on Login icon
+2019-07-07 13:05:44 INFO  LogLog4j:41 - HomePageHelper: openLoginPage method was finished
+2019-07-07 13:05:44 INFO  LogLog4j:41 - LoginPageHelper: waitUntilPageIsLoaded method was started
+2019-07-07 13:05:44 INFO  LogLog4j:41 - Wait until SignIn button is clickable
+2019-07-07 13:05:45 INFO  LogLog4j:41 - LoginPageHelper: waitUntilPageIsLoaded method was finished
