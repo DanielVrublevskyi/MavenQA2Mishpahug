@@ -1,13 +1,16 @@
 package ru.stqa.selenium;
 
+import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 
+import com.google.common.io.Files;
 import org.apache.log4j.Logger;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.Capabilities;
+import org.openqa.selenium.*;
 
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.events.AbstractWebDriverEventListener;
+import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
@@ -34,8 +37,41 @@ public class TestBase {
   public static LogLog4j log = new LogLog4j();
 
 
-  protected WebDriver driver;
-  protected IntroWindowHelper introWindow;
+  public EventFiringWebDriver driver;
+  public IntroWindowHelper introWindow;
+
+  public static class MyListener extends
+          AbstractWebDriverEventListener {
+    @Override
+    public void beforeFindBy(By by, WebElement element,
+                             WebDriver driver) {
+      //super.beforeFindBy(by, element, driver);
+      Log.info("Search element by:" + by);
+    }
+
+    @Override
+    public void afterFindBy(By by, WebElement element,
+                            WebDriver driver) {
+      //super.afterFindBy(by, element, driver);
+      Log.info("element " + by + " found");
+    }
+
+    @Override
+    public void onException(Throwable throwable, WebDriver driver) {
+      //super.onException(throwable, driver);
+      Log.info("Exception: " + throwable);
+      File tmp = ((TakesScreenshot) driver)
+              .getScreenshotAs(OutputType.FILE);
+      File screen = new File("screen" + System
+              .currentTimeMillis() + ".png");
+      //System.out.println("screen name - " );
+      try {
+        Files.copy(tmp, screen);
+      } catch (IOException e) {
+        e.printStackTrace();
+      }
+    }
+  }
 
   @BeforeSuite
   public void initTestSuite() throws IOException {
@@ -50,7 +86,9 @@ public class TestBase {
   @BeforeMethod
   public void initWebDriver() {
 
-    driver = WebDriverPool.DEFAULT.getDriver(gridHubUrl, capabilities);
+    driver = new EventFiringWebDriver(WebDriverPool
+            .DEFAULT.getDriver(gridHubUrl, capabilities));
+    driver.register(new MyListener());
     driver.get(baseUrl);
     introWindow = PageFactory.initElements(driver, IntroWindowHelper.class);
     introWindow.waitUntilPageIsLoaded().closeWindow();

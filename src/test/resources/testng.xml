@@ -2,11 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="Tests" verbose="5">
   <test name="Test1">
-    <groups>
-      <run>
-        <include name = "sanity"/>
-      </run>
-    </groups>
+
     <classes>
       <class name="ru.stqa.selenium.ProfilePageTests"/>
       <class name="ru.stqa.selenium.FamilyPageTests"/>
