@@ -39,6 +39,7 @@ public class HomePageTests extends TestBase{
 
     @Test (dataProviderClass = DataProviders.class, dataProvider = "singleFilterByHoliday")
     public void singleFilterByHoliday(String holiday){
+        //String holiday = "Purimm";
         log.startTestCase("singleFilterByHoliday");
         log.info("PARAMETER: " + holiday);
         log.info("Choose filter by" + holiday);

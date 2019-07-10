@@ -10,6 +10,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.support.PageFactory;
 
 import java.util.List;
+import java.util.NoSuchElementException;
 import java.util.Set;
 
 public class HomePageHelper extends PageBase{
@@ -97,9 +98,9 @@ public class HomePageHelper extends PageBase{
     public HomePageHelper chooseFilterHoliday(String value) {
         log.info("---HomePageHelper:chooseFilterHoliday method was started, value =" + value);
         log.info("Select filter by Holiday" + value);
-    Select selector = new Select(filterHoliday);
-    selector.selectByValue(value);
-    return this;
+        Select selector = new Select(filterHoliday);
+        selector.selectByValue(value);
+        return this;
     }
 
     public HomePageHelper chooseFilterFood(String value) {

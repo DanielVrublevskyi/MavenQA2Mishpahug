@@ -46,20 +46,20 @@ public class TestBase {
     public void beforeFindBy(By by, WebElement element,
                              WebDriver driver) {
       //super.beforeFindBy(by, element, driver);
-      Log.info("Search element by:" + by);
+      log.info("Search element by:" + by);
     }
 
     @Override
     public void afterFindBy(By by, WebElement element,
                             WebDriver driver) {
       //super.afterFindBy(by, element, driver);
-      Log.info("element " + by + " found");
+      log.info("element " + by + " found");
     }
 
     @Override
     public void onException(Throwable throwable, WebDriver driver) {
       //super.onException(throwable, driver);
-      Log.info("Exception: " + throwable);
+      log.info("Exception: " + throwable);
       File tmp = ((TakesScreenshot) driver)
               .getScreenshotAs(OutputType.FILE);
       File screen = new File("screen" + System
@@ -70,6 +70,7 @@ public class TestBase {
       } catch (IOException e) {
         e.printStackTrace();
       }
+      log.info("See screen: "+screen);
     }
   }
 

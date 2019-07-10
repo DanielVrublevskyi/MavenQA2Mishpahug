@@ -45,6 +45,7 @@ public class TestListener {
             } catch (IOException e) {
                 e.printStackTrace();
             }
+            System.out.println("See screen:" + screen);
         }
     }
 

@@ -1,12 +1,13 @@
 package ru.stqa.selenium;
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import com.google.common.io.Files;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.events.AbstractWebDriverEventListener;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.testng.annotations.Test;
+
+import java.io.File;
+import java.io.IOException;
 
 public class TestListenerWeb {
     EventFiringWebDriver driver;
@@ -28,6 +29,16 @@ public class TestListenerWeb {
         public void onException(Throwable throwable, WebDriver driver) {
             //super.onException(throwable, driver);
             System.out.println("Exception: " + throwable);
+            File tmp = ((TakesScreenshot) driver)
+                    .getScreenshotAs(OutputType.FILE);
+            File screen = new File("screen" + System
+                    .currentTimeMillis() + ".png");
+            //System.out.println("screen name - " );
+            try {
+                Files.copy(tmp, screen);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
     }
 
