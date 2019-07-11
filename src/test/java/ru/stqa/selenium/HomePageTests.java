@@ -16,7 +16,7 @@ public class HomePageTests extends TestBase{
     public LoginPageHelper loginPage;
 
 
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void initTests() {
         homePage = PageFactory
                 .initElements(driver, HomePageHelper.class);
@@ -24,7 +24,7 @@ public class HomePageTests extends TestBase{
         homePage.waitUntilPageIsLoaded();
     }
 
-    @Test
+    @Test(groups = {"sanity"})
     public void loginPageIsLoadedTest(){
         log.startTestCase("loginPageIsLoadedTest");
         log.info("Open login page");
@@ -37,7 +37,7 @@ public class HomePageTests extends TestBase{
         log.endTestCase("loginPageIsLoadedTest");
     }
 
-    @Test (dataProviderClass = DataProviders.class, dataProvider = "singleFilterByHoliday")
+    @Test (groups = {"regression"},dataProviderClass = DataProviders.class, dataProvider = "singleFilterByHoliday")
     public void singleFilterByHoliday(String holiday){
         //String holiday = "Purimm";
         log.startTestCase("singleFilterByHoliday");
@@ -101,7 +101,7 @@ public class HomePageTests extends TestBase{
     }
     */
 
-    @Test(dataProviderClass = DataProviders.class, dataProvider = "singleFilterByHoliday")
+    @Test(groups = {"regression"},dataProviderClass = DataProviders.class, dataProvider = "singleFilterByHoliday")
     public void singleFilterByHolidaysEventsInWindow(String holiday){
         log.startTestCase("singleFilterByHolidaysEventsInWindow");
         log.info("PARAMETER: " + holiday);

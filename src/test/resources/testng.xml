@@ -2,10 +2,14 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="Tests" verbose="5">
   <test name="Test1">
-
+    <groups>
+      <run>
+        <exclude name="regression"/>
+      </run>
+    </groups>
     <classes>
-
-      <class name="ru.stqa.selenium.FamilyPageTests"/>
+      <class name="ru.stqa.selenium.ProfilePageTests"/>
+      <class name="ru.stqa.selenium.HomePageTests"/>
     </classes>
   </test>  
 </suite>

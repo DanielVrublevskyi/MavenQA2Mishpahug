@@ -13,7 +13,7 @@ public class ProfilePageTests extends TestBase {
     public ProfilePageHelper profilePage;
 
 
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void initTests() {
         homePage = PageFactory.initElements(driver,HomePageHelper.class);
         loginPage = PageFactory.initElements(driver,LoginPageHelper.class);
@@ -34,7 +34,7 @@ public class ProfilePageTests extends TestBase {
         Assert.assertEquals(profilePage.getTitleText(),"My Profile: " + LOGIN);
     }
 
-    @Test
+    @Test(groups = {"sanity","regression"})
     public void profileURGuestTest()  {
         homePageAuth.openProfilePage();
         profilePage.waitUntilPageIsLoaded()
@@ -44,7 +44,7 @@ public class ProfilePageTests extends TestBase {
         Assert.assertFalse(homePageAuth.plusButtonIsDisplayed());
     }
 
-    @Test
+    @Test(groups = {"sanity","regression"})
     public void profileURFamilyTest()  {
         homePageAuth.openProfilePage();
         profilePage.waitUntilPageIsLoaded()
@@ -54,7 +54,7 @@ public class ProfilePageTests extends TestBase {
         Assert.assertTrue(homePageAuth.plusButtonIsDisplayed());
     }
 
-    @Test
+    @Test(groups = {"sanity","regression"})
     public void profileURFamilyAndGustTest()  {
         homePageAuth.openProfilePage();
         profilePage.waitUntilPageIsLoaded()

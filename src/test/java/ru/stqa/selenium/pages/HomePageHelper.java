@@ -99,7 +99,13 @@ public class HomePageHelper extends PageBase{
         log.info("---HomePageHelper:chooseFilterHoliday method was started, value =" + value);
         log.info("Select filter by Holiday" + value);
         Select selector = new Select(filterHoliday);
-        selector.selectByValue(value);
+        try{
+            selector.selectByValue(value);
+        } catch (Exception e){
+            log.info("Exception: " + e);
+            throw new NoSuchElementException("" +e);
+        }
+
         return this;
     }
 
