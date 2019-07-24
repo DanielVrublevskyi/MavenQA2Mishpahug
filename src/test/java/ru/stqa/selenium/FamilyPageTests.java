@@ -11,6 +11,7 @@ public class FamilyPageTests extends TestBase {
     public HomePageHelper homePage;
     public LoginPageHelper loginPage;
     public HomePageAuthHelper homePageAuth;
+    
     public ProfilePageHelper profilePage;
     public FamilyPageHelper familyPage;
 
